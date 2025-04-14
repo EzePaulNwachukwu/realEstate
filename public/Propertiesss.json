@@ -1,0 +1,361 @@
+[
+
+{ 
+    "products": [  
+    {
+        "id": 1,
+        "tittle": "Luxury Condominiums",
+        "images": {"building": "https://script.viserlab.com/realvest/assets/images/property/gallery/65f96cf7510341710845175.png","palor":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb70eaffad1710995214.png","dinning":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f96cf80f4de1710845176.png","room":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb70e994021710995214.png","kitchen":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f96cf7bba471710845175.png","restroom":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac73be6b501710933819.png"},
+        "location": "New York",
+        "progressbar": "  100%",
+        "investors": "12 Investors | $144,000.00 (100%)",
+        "price": "$12,000,00",
+        "profit": "25 - 40%",
+        "repeatSchedule": "Repeat (Monthly)",
+        "CapitalBack": true,
+        "DownPayment":"40%",
+        "InvestmentType":"Installment",
+        "InitialInvestAmount":"$4,800.00",
+        "InstallmentLateFee": "$200.00",
+        "ProfitRepeat":"5 Times",
+        "ProfitBack": "7 days after investment",
+        "PropertyDescription": {"p1":"Welcome to Luxury Condominiums, a pinnacle of upscale living nestled in the heart of New York City. Boasting unparalleled elegance, supreme comfort, and breathtaking views, this architectural marvel stands as a testament to modern luxury living.","p2":"Strategically located in one of the most coveted neighborhoods of New York City, Luxury Condominiums offers the convenience of urban living with easy access to world-class dining, entertainment, shopping, and cultural experiences. Situated amidst the bustling energy of the city yet providing a serene retreat from its hustle and bustle, residents enjoy the best of both worlds.","p3":"Meticulously crafted by renowned architects and designers, Luxury Condominiums epitomizes contemporary sophistication and timeless charm. The striking facade of the building captivates with its sleek lines and innovative design, setting it apart as an icon of luxury in the city skyline.","p4":"Step into a realm of refined living with our exquisite residences, where every detail has been meticulously curated to exceed the highest standards of luxury. From expansive living spaces bathed in natural light to state-of-the-art appliances and premium finishes, each residence offers a harmonious blend of comfort, style, and functionality. Floor-to-ceiling windows frame panoramic views of the city, creating an ambiance of unparalleled beauty and tranquility.","p5":"Indulge in a lifestyle of luxury and convenience with our comprehensive array of amenities tailored to cater to your every need. Whether you're unwinding at the rooftop infinity pool overlooking the cityscape, staying active at the fully-equipped fitness center, or hosting gatherings in the elegantly appointed communal spaces, Luxury Condominiums provides an unmatched living experience designed to elevate your lifestyle.","p6":"Experience unparalleled service and hospitality with our dedicated team of professionals committed to delivering an exceptional living experience. From 24-hour concierge services to valet parking and personalized assistance, we ensure that every aspect of your residency is seamlessly taken care of, allowing you to focus on what truly matters—enjoying life to the fullest.","p7":"Luxury Condominiums offers more than just a place to live; it provides a sanctuary where luxury meets lifestyle, where every moment is an opportunity to indulge in the finer things in life. Experience the epitome of urban sophistication and make Luxury Condominiums your new address in the heart of New York City."},
+
+        "video":"https://youtu.be/WDQ0cPwHYDA"
+
+    },
+    {
+        "id": 2,
+        "tittle": "Traditional Machiya Townhouse",
+        "images": {"building":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f6d376c7abb1710674806.png","palor":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac505bfc051710933253.png","dinning":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac73c082b31710933820.png","kitchen":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac73bc1bc41710933819.png","room":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac73bab0661710933819.png","restroom":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac73be6b501710933819.png"},
+        "location":"San Francisco, USA",
+        "progressbar": "100%",
+        "investors": "12 Investors | $100,000.00 (100%)",
+        "price": "$20,000,00",
+        "profit": "$5,000.00",
+        "repeatSchedule": "Onetime",
+        "CapitalBack": true,
+        "ProfitBack":"10 days after investment",
+        "PropertyDescription":{"p1":"The Traditional Machiya Townhouse, nestled in the heart of San Francisco, exudes timeless charm and elegance. This meticulously crafted property seamlessly combines traditional Japanese architectural elements with modern amenities, creating a unique and inviting living space.","p2":"As you step through the entrance, you are greeted by the warm ambiance of exposed wooden beams and intricately designed shoji screens. The open floor plan effortlessly flows from room to room, offering both spaciousness and intimacy.","p3":"The interior features a harmonious blend of natural materials, including rich hardwood floors, tatami mats, and bamboo accents, which create a serene and tranquil atmosphere throughout the home. Large windows invite ample natural light, illuminating the living spaces and highlighting the beauty of the surrounding landscape.","p4":"The kitchen is a culinary enthusiast's dream, boasting high-end appliances, sleek countertops, and ample storage space. Whether you're preparing a simple meal or hosting a dinner party, this space is sure to inspire your inner chef.","p5":"Upstairs, the bedrooms provide a peaceful retreat from the hustle and bustle of city life. Each room is thoughtfully designed with comfort and relaxation in mind, featuring plush bedding, soft lighting, and stunning views of the neighborhood below.","p6":"Outside, a quaint garden oasis awaits, providing a private sanctuary for outdoor entertaining or quiet contemplation. Lush foliage, a tranquil koi pond, and a traditional teahouse add to the property's enchanting appeal.","p7":"Located in one of San Francisco's most desirable neighborhoods, this traditional Machiya townhouse offers the perfect blend of modern luxury and historic charm. With its impeccable craftsmanship and thoughtful design, it truly embodies the essence of refined urban living."},
+        "video":"https://www.youtube.com/embed/WDQ0cPwHYDA"
+        
+
+    },
+    {
+        "id": 3,
+        "tittle": "Elite Horizon",
+        "images": {"building":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fa773ae13791710913338.png","kitchen":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fa773c28d2f1710913340.png","palor":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fa773b643581710913339.png","room":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fa773b1e5701710913339.png","restroom":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fa773b9db031710913339.png" },
+        "location": "Tokyo japan",
+        "progressbar": "  84%",
+        "investors": "12 Investors | $42,000.00 (84%)",
+        "price": "$25,000,00",
+        "profit": "$5,000.00",
+        "repeatSchedule": "Repeat (Yearly)",
+        "CapitalBack": false,
+        "InvestmentType":"Installment",
+        "DownPayment":"20%",
+        "InitialInvestAmount": "$5,000.00",
+        "TotalInstallments": "20",
+        "InstallmentSchedule":"Monthly",
+        "InstallmentLateFee":"$100.00",
+        "ProfitBack":"30 days after investment",
+        "ProfitRepeat":"3 Times",
+        "PropertyDescription":{"p1":"Welcome to Elite Horizon, a prestigious real estate investment opportunity nestled in the vibrant heart of Tokyo. Experience luxury living at its finest with this exclusive property, boasting unparalleled features, facilities, and amenities.","p2":"Discover a sanctuary of sophistication and comfort within Elite Horizon's meticulously designed residences. Each unit exemplifies modern elegance and timeless appeal, offering spacious layouts and breathtaking views of Tokyo's iconic skyline. Immerse yourself in a lifestyle of opulence and convenience, where every detail is crafted to perfection.","p3":"Elite Horizon sets the standard for refined living with its array of world-class facilities. From the moment you step into the lobby, you are greeted by an ambiance of grandeur and sophistication. Indulge in the ultimate relaxation at the state-of-the-art spa and wellness center, offering rejuvenating treatments and therapeutic amenities. Stay active and energized at the fully equipped fitness center, featuring cutting-edge equipment and personalized training programs.","p4":"For those who appreciate fine dining and entertainment, Elite Horizon offers an exquisite culinary experience at its gourmet restaurant and lounge. Whether hosting intimate gatherings or socializing with fellow residents, this sophisticated venue is the perfect setting for creating unforgettable memories.","p5":"Elevate your lifestyle with the exclusive amenities available at Elite Horizon. Take a leisurely stroll through the beautifully landscaped gardens and green spaces, providing a tranquil escape from the bustling city life. Enjoy unparalleled convenience with 24-hour concierge services, ensuring your every need is met with promptness and professionalism.","p6":"Situated in the heart of Tokyo, Elite Horizon offers unparalleled access to the city's finest attractions, dining establishments, and cultural landmarks. Whether exploring the bustling streets of Ginza or unwinding in the serene surroundings of nearby parks, every moment spent at Elite Horizon is an opportunity for enriching experiences and cherished memories.","p7":"Experience the epitome of luxury living at Elite Horizon – where sophistication meets convenience, and every detail is designed to exceed your expectations. Welcome home to a world of elegance, exclusivity, and endless possibilities."},
+        "video": "https://www.youtube.com/embed/WDQ0cPwHYDA"
+    },
+
+    {
+        "id": 4,
+        "tittle": "Signature Spires",
+        "images": {"building":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac0526bb911710932050.png", "restroom":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac0531fdb41710932051.png","kitchen":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac0528aa261710932050.png","palor":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac052f27811710932050.png","dinning":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac052a51291710932050.png","room":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac0531fdb41710932051.png" },
+        "location": "Berlin, Germany",
+        "progressbar": "100%",
+        "investors": "10 Investors | $200,000.00 (100%)",
+        "price": "$20,000,00",
+        "profit": "20 - 30%",
+        "repeatSchedule": "Onetime",
+        "CapitalBack": true,
+        "ProfitBack":"120 days after investment",
+        "InvestmentType":"Onetime",
+        "video":"https://www.youtube.com/embed/WDQ0cPwHYDA",
+        "PropertyDescription":{"p1":"Welcome to SignatureSpires, a premier real estate investment opportunity nestled in the vibrant city of Berlin.","p2":"Discover a sanctuary of luxury living with our meticulously crafted residences boasting unparalleled elegance and sophistication. SignatureSpires offers a fusion of contemporary design and timeless charm, promising an exceptional living experience for discerning investors.","p3":"Each residence within SignatureSpires is meticulously designed to cater to the needs of modern lifestyles, featuring spacious layouts and premium finishes throughout. From sleek open-plan living areas to expansive floor-to-ceiling windows offering breathtaking views of the Berlin skyline, every detail has been thoughtfully curated to elevate your living experience.","p4":"Experience the epitome of comfort and convenience with an array of amenities designed to enhance your lifestyle. Take a dip in the sparkling rooftop pool, unwind in the serene landscaped gardens, or host unforgettable gatherings in the exclusive resident lounge. SignatureSpires offers a wealth of amenities to cater to every aspect of your wellbeing.","p5":"at the center of it all. Immerse yourself in the rich cultural tapestry of the city, with world-class dining, shopping, and entertainment options right at your doorstep. Whether you're exploring the historic landmarks of the city or indulging in its vibrant nightlife, the best of Berlin is just moments away from your doorstep.","p6":"At SignatureSpires, luxury living meets unparalleled convenience, offering investors a truly exceptional opportunity to own a piece of Berlin's iconic skyline. Experience the pinnacle of urban living and make SignatureSpires your next investment destination."}
+
+        
+
+    },
+
+    {
+        "id": 5,
+        "tittle": "OpalOasis Estates",
+        "images":{"building":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f9782e96d861710848046.png","dinning":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f9782f6f23e1710848047.png","kitchen":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f9782f2a3e51710848047.png","palor":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb98307bb71710995843.png","room":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb982e55ce1710995842.png","restroom":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f9782edfde11710848046.png"} ,
+        "location": "Berlin, Germany",
+        "progressbar": "68%",
+        "investors": "5 Investors | $170,000.00 (68%)",
+        "price": "$50,000,00",
+        "profit": "5%",
+        "repeatSchedule": "Lifetime (Monthly)",
+        "CapitalBack": false,
+        "video":"https://www.youtube.com/embed/WDQ0cPwHYDA",
+        "InvestmentType":"Installment",
+        "DownPayment":"20%",
+        "InitialInvestAmount":"$10,000.00",
+        "TotalInstallments": "5",
+        "InstallmentSchedule":"Monthly",
+        "InstallmentLateFee":"$500.00",
+        "ProfitBack":"180 days after investment",
+        "PropertyDescription":{"p1":"Welcome to OpalOasis Estates, where luxury meets sophistication in the heart of Berlin's vibrant real estate landscape. Nestled amidst the city's bustling energy, OpalOasis Estates stands as a beacon of refined living, offering a haven for discerning investors seeking unparalleled comfort and convenience.","p2":"OpalOasis Estates boasts a unique blend of modern architecture and timeless elegance, setting a new standard for luxury living in Berlin. Each meticulously crafted residence is designed to exceed expectations, featuring sleek lines, expansive windows, and premium finishes that elevate the living experience to new heights.","p3":"Step into a world of comfort and convenience as you explore the array of amenities available at OpalOasis Estates. Indulge in the serenity of lush landscaped gardens, perfect for leisurely strolls or peaceful moments of reflection. pe into relaxation at the sparkling swimming pool, where you can unwind and soak up the sun in style.","p4":"For those who seek an active lifestyle, OpalOasis Estates offers state-of-the-art fitness facilities equipped with the latest equipment, allowing residents to stay in shape without ever leaving home. Hosting a gathering? Look no further than the stylishly appointed clubhouse, where you can entertain guests in sophisticated surroundings.","p5":"OpalOasis Estates prioritizes security and privacy, providing residents with peace of mind and a sense of belonging. With 24-hour security and controlled access, you can rest assured that your safety is always our top priority.","p6":"Conveniently located in the heart of Berlin, OpalOasis Estates offers easy access to a wealth of amenities and attractions. Whether you're exploring the vibrant nightlife of the city center or enjoying a leisurely afternoon in one of the nearby parks, everything you need is just moments away.","p7":"Experience the pinnacle of luxury living at OpalOasis Estates, where every detail is thoughtfully curated to ensure an unparalleled experience for our esteemed residents. Welcome home to OpalOasis Estates, where luxury knows no bounds."}
+
+    },
+    {
+        "id": 6,
+        "tittle": "Infinity Gardens",
+        "images": {"building":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f970e1075791710846177.png","dinning":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb9ec1530b1710995948.png","kitchen":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f970e14a00e1710846177.png","palor":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb9ebee88d1710995947.png","restroom":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb9ebd99451710995947.png","room":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb9ebc357a1710995947.png"},
+        "video":"https://www.youtube.com/embed/WDQ0cPwHYDA",
+        "location": "Tokyo, Japan",
+        "progressbar": "100%",
+        "investors": "2 Investors | $20,000.00 (100%)",
+        "price": "$10,000,00",
+        "profit": "$500.00 - $700.00",
+        "repeatSchedule": "Repeat (Monthly) ",
+        "CapitalBack": true,
+        "InvestmentType":"Onetime",
+        "ProfitRepeat":"4 Times",
+        "ProfitBack":"90 days after investment",
+        "PropertyDescription":{"p1":"Welcome to Infinity Gardens, a luxurious oasis nestled in the heart of Paris, where sophistication meets comfort in every detail.","p2":"Imagine a place where elegance and convenience intertwine seamlessly. Infinity Gardens offers a refined living experience, where every corner is meticulously crafted to cater to your desires.","p3":"Step into our meticulously designed apartments, where modern architecture blends effortlessly with timeless charm. Each residence is thoughtfully curated to provide you with the utmost comfort and style, featuring spacious layouts and exquisite finishes.","p4":"Indulge in the breathtaking views of Paris from your private balcony, a serene retreat where you can unwind and marvel at the beauty of the city.Experience the pinnacle of convenience with our state-of-the-art amenities. Take a refreshing dip in the rooftop infinity pool, offering panoramic vistas of the iconic Parisian skyline. Stay active and energized in our fully equipped fitness center, designed to inspire wellness and vitali","p5":"Entertain guests in style at our elegant clubhouse, complete with a stylish lounge area and gourmet kitchen facilities. Host gatherings and celebrations with ease, surrounded by the allure of sophistication and luxury.","p6":"Discover a world of culinary delights at our exclusive dining venues, where renowned chefs tantalize your taste buds with exquisite flavors and culinary masterpieces.","p7":"With our prime location in Paris, you'll find yourself just moments away from the city's finest attractions, shopping destinations, and dining establishments. Experience the vibrant energy of Parisian life, right at your doorstep."}
+
+        
+    },
+    {
+        "id": 7,
+        "tittle": "Iconic Victorian",
+        "images": {"building":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f977387f6be1710847800.png","kitchen":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f970e14a00e1710846177.png","dinning":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac052a51291710932050.png","palor":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb9ebee88d1710995947.png","restroom":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac73be6b501710933819.png","room":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fac73bab0661710933819.png"},
+        "video":"https://www.youtube.com/embed/WDQ0cPwHYDA",
+        "location": "Paris, France",
+        "progressbar": "100%",
+        "investors": "2 Investors | $20,000.00 (100%)",
+        "price": "$4,000,00",
+        "profit": "10 - 15%",
+        "repeatSchedule": "Repeat(Monthly) ",
+        "CapitalBack": true,
+        "InvestmentType":"Installment",
+        "ProfitRepeat":" Times",
+        "ProfitBack":"45 days after investment",
+        "InitialInvestAmount":"$1200.00",
+        "DownPayment":"30%",
+        "TotalInstallments": "2",
+        "InstallmentSchedule":"Monthly",
+        "InstallmentLateFee":"$50.00",
+        "PropertyDescription":{"p1":"Welcome to the epitome of elegance and sophistication in the heart of Paris – the Iconic Victorian. Nestled within the vibrant cityscape, this exquisite property stands as a testament to timeless charm and modern luxury.","p2":"Step into a world of unparalleled refinement as you enter this meticulously crafted masterpiece. The Iconic Victorian boasts a fusion of classic architecture and contemporary design, offering a truly unique living experience. From the ornate façade adorned with intricate details to the grand interiors exuding opulence at every turn, every aspect of this property is a celebration of exquisite craftsmanship.","p3":"Indulge in the lavish amenities that await within the walls of this prestigious residence. Immerse yourself in the serenity of the meticulously landscaped gardens, providing a tranquil oasis amidst the bustling city life. Retreat to the spacious living areas adorned with high ceilings and expansive windows, offering breathtaking views of the iconic Parisian skyline.","p4":"Experience the epitome of culinary excellence in the state-of-the-art kitchen, equipped with top-of-the-line appliances and bespoke finishes. Entertain guests in style in the grand dining room, or unwind in the cozy ambiance of the private library, perfect for moments of relaxation and contemplation.","p5":"For those seeking rejuvenation and recreation, the Iconic Victorian offers an array of exclusive facilities. Take a dip in the sparkling swimming pool, surrounded by lush greenery and bathed in natural light. Stay active and energized in the fully-equipped fitness center, or enjoy a leisurely stroll along the charming cobblestone pathways that wind through the enchanting grounds.","p6":"With its prime location in the heart of Paris, the Iconic Victorian offers unparalleled access to the city's finest attractions, cultural landmarks, and culinary delights. Whether you're exploring the historic streets of Le Marais or indulging in world-class shopping along the Champs-Élysées, every moment spent in this prestigious residence is sure to be filled with unforgettable experiences.","p7":"In conclusion, the Iconic Victorian represents the pinnacle of luxury living in Paris. From its timeless elegance to its unparalleled amenities and prime location, this exceptional property offers a truly unparalleled lifestyle for the discerning connoisseur of fine living."}
+
+
+    },
+    {
+        "id": 8,
+        "tittle": "Quasar Quarters",
+        "images": {"building":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f97d68be3581710849384.png","restroom":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbbb15393eb1710996245.png","dinning":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f97d90f2eec1710849424.png","kitchen":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f97d9141ecd1710849425.png","room":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbbb1522bc01710996245.png","palor":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbbb15072141710996245.png"},
+        "video":"https://www.youtube.com/embed/WDQ0cPwHYDA",
+        "location": "New York, USA",
+        "progressbar": "100%",
+        "investors": "10 Investors | $80,000.00 (100%)",
+        "price": "$8,000,00",
+        "profit": "10 - 15%",
+        "repeatSchedule": "Repeat(Monthly) ",
+        "CapitalBack": false,
+        "InvestmentType":"Onetime",
+        "ProfitRepeat":"5 Times",
+        "ProfitBack":"60 days after investment",
+        "PropertyDescription":{"p1":"Introducing Quasar Quarters, a beacon of luxury and sophistication nestled in the heart of vibrant New York City. As an emblem of modern living, Quasar Quarters redefines the essence of upscale real estate investment with its unparalleled blend of features, facilities, and amenities.","p2":"Elegantly designed, Quasar Quarters offers a symphony of architectural brilliance and contemporary style, ensuring a living experience that transcends expectations. Boasting a prime location in New York, residents are greeted with breathtaking views of the city skyline, embodying the essence of urban living at its finest.","p3":"Step into a realm of comfort and convenience with a plethora of amenities designed to cater to every aspect of modern living. Immerse yourself in the tranquility of lush green spaces within the meticulously landscaped gardens, providing a serene retreat amidst the bustling cityscape.","p4":"Indulge in a world-class fitness center equipped with state-of-the-art facilities, perfect for maintaining an active lifestyle without ever leaving the confines of home. Unwind and rejuvenate in the luxurious spa and wellness center, offering a sanctuary for relaxation and revitalization.","p5":"Entertain guests in style with the exclusive resident lounge and entertainment area, providing the perfect setting for social gatherings and soirées. For those with a penchant for culinary delights, the fully-equipped gourmet kitchen offers the ideal space to unleash your inner chef and create culinary masterpieces.","p6":"Experience the epitome of luxury living with impeccably designed interiors and premium finishes, curated to exude sophistication and elegance at every turn. From expansive floor-to-ceiling windows that flood each residence with natural light to high-end appliances and fixtures, every detail is crafted with the utmost attention to detail.","p7":"At Quasar Quarters, residents are not just provided with a place to call home, but an elevated lifestyle defined by unparalleled luxury, convenience, and sophistication. Welcome to a world where luxury knows no bounds and every moment is infused with an unparalleled sense of opulence and refinement. Welcome to Quasar Quarters – where luxury meets lifestyle in the heart of New York City."}
+
+    },
+    {
+        "id": 9,
+        "tittle": "Modern Loft",
+        "images": {"building":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f979ea8883f1710848490.png","dinning":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f9782f6f23e1710848047.png","kitchen":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f9782f2a3e51710848047.png","palor":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb98307bb71710995843.png","restroom":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb9ebd99451710995947.png","room":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbbb1522bc01710996245.png"}, 
+        "location": "New York, USA",
+        "video":"https://www.youtube.com/embed/WDQ0cPwHYDA",
+        "progressbar": "65.7%",
+        "investors": "10 Investors | $131,400.00 (65.7%)",
+        "price": "$20,000,00",
+        "profit": "5 - 8%",
+        "repeatSchedule": "Lifetime (Monthly)",
+        "CapitalBack": true,
+        "InvestmentType":"Installment",
+        "ProfitRepeat":"5 Times",
+        "ProfitBack":"90 days after investment",
+        "InitialInvestAmount":"$6,000.00",
+        "PerInstallmentAmount":"$1,400.00",
+        "TotalInstallments":"10",
+        "InstallmentSchedule":"Monthly",
+        "InstallmentLateFee":"$100.00",
+        "DownPayment":"30%",
+        "PropertyDescription":{"p1":"Introducing 'Modern Loft' – an exquisite testament to contemporary living nestled in the heart of vibrant New York City. This exceptional property epitomizes luxury and convenience, offering a lifestyle of unparalleled sophistication.","p2":"Perched amidst the bustling urban landscape, 'Modern Loft' presents a harmonious blend of sleek architectural design and refined interiors. Boasting expansive living spaces adorned with floor-to-ceiling windows, every corner is bathed in natural light, creating an ambiance of warmth and openness.","p3":"Step inside to discover meticulously crafted details that define modern elegance. High ceilings accentuate the sense of grandeur, while premium finishes and fixtures exude timeless charm. The seamless integration of form and function ensures both comfort and style are paramount.","p4":"Designed for the discerning individual, 'Modern Loft' is equipped with state-of-the-art amenities to cater to every need. From a fully-equipped gourmet kitchen where culinary aspirations come to life, to sumptuous bedrooms providing a sanctuary for relaxation, every element has been thoughtfully curated.","p5":"Beyond the confines of the residence, residents of 'Modern Loft' enjoy access to an array of exclusive facilities. Whether unwinding in the serene courtyard oasis or rejuvenating in the fitness center, every moment promises to elevate the senses.","p6":"Located in the cosmopolitan heart of New York City, 'Modern Loft' offers unparalleled convenience and connectivity. With renowned dining, shopping, and entertainment destinations just moments away, the vibrancy of city life beckons at your doorstep.","p7":"In summary, 'Modern Loft' embodies the epitome of contemporary luxury living, where sophistication meets comfort in an unparalleled urban oasis. Experience the pinnacle of modern living in this distinguished residence, where every detail has been meticulously crafted to exceed expectations."}
+    },
+    {
+        "id": 10,
+        "tittle": "Luxury Penthouse",
+        "images": {"building":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f97559575831710847321.png","kitchen":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f970e14a00e1710846177.png","dinning":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f97d90f2eec1710849424.png","palor":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb98307bb71710995843.png","restroom":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb9ebd99451710995947.png","room":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbbb1522bc01710996245.png"},
+        "video":"https://www.youtube.com/embed/WDQ0cPwHYDA",
+        "location": "London, England",
+        "progressbar": "98%",
+        "investors": "5 Investors | $49,000.00 (98%)",
+        "price": "$10,000,00",
+        "profit": "$1,000.00 - $1,500.00",
+        "repeatSchedule": "Onetime",
+        "CapitalBack": true,
+        "InvestmentType":"Installment",
+        "DownPayment":"30%",
+        "InitialInvestAmount":"$30,000.00",
+        "TotalInstallments":"7",
+        "ProfitBack":"30 days after investment",
+        "PerInstallmentAmount":"$1,000.00",
+        "InstallmentLateFee":"$100.00",
+        "PropertyDescription":{"p1":"Introducing the epitome of opulence nestled in the heart of London – the Luxury Penthouse. This prestigious property redefines modern living with its unparalleled blend of sophistication and comfort.","p2":"Elevated above the bustling cityscape, this exclusive penthouse offers breathtaking panoramic views of London's iconic landmarks, creating an enchanting backdrop for every moment. Boasting a prime location in one of London's most coveted neighborhoods, this residence provides unparalleled access to the city's vibrant culture, renowned dining establishments, and esteemed entertainment venues.","p3":"Step into a world of luxury as you enter the meticulously designed interiors, where every detail has been thoughtfully curated to exceed expectations. The expansive living spaces seamlessly blend contemporary elegance with timeless charm, offering an inviting ambiance for relaxation and entertainment alike.","p4":"Indulge in the epitome of culinary excellence within the gourmet kitchen, equipped with state-of-the-art appliances and premium finishes, where culinary enthusiasts can unleash their creativity with ease.","p5":"Retreat to the sumptuous master suite, a sanctuary of tranquility adorned with lavish furnishings and bespoke accents. The ensuite bathroom exudes sophistication, featuring lavish marble accents, a rejuvenating rain shower, and a luxurious soaking tub, providing the ultimate escape from the hustle and bustle of city life","p6":"Entertain guests in style on the expansive private terrace, where panoramic views serve as the perfect backdrop for intimate gatherings or lavish soirées under the starlit sky.","p7":"Experience the pinnacle of urban living at the Luxury Penthouse – where luxury knows no bounds and every moment is infused with unparalleled sophistication and grace. Welcome home to a life of uncompromising elegance and refinement in the heart of London's vibrant metropolis."}
+
+    },
+    {
+        "id": 11,
+        "tittle": "Stylish Apartment",
+        "images": {"building":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f97c4a5af361710849098.png","dinning":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f9782f6f23e1710848047.png","kitchen":"https://script.viserlab.com/realvest/assets/images/property/gallery/65f9782f2a3e51710848047.png","palor":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb98307bb71710995843.png","restroom":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbb9ebd99451710995947.png","room":"https://script.viserlab.com/realvest/assets/images/property/gallery/65fbbb1522bc01710996245.png"},
+        "video":"https://youtu.be/WDQ0cPwHYDA?si=oHllIiSvS6TXdBaj",
+        "location": "London, England",
+        "progressbar": "40.3%",
+        "investors": "11 Investors | $161,200.00 (40.3%)",
+        "price": "$20,000,00",
+        "profit": "5%",
+        "repeatSchedule": "Lifetime (Monthly)",
+        "CapitalBack": true,
+        "InvestmentType":"Installment",
+        "DownPayment":"30%",
+        "InitialInvestAmount":"$6,000.00",
+        "TotalInstallments":"10",
+        "PerInstallmentAmount":"$1,400.00",
+        "ProfitBack":"120 days after investment",
+        "InstallmentLateFee":"$10.00",
+        "InstallmentSchedule":"Monthly",
+        "ProfitRepeat":"3 Times",
+        "PropertyDescription":{"p1":"Welcome to the epitome of urban living at Stylish Apartment, nestled in the heart of vibrant London. This luxurious abode offers a seamless fusion of contemporary design and unparalleled comfort, promising an unparalleled lifestyle experience.","p2":"Step into a world of sophistication as you enter this meticulously crafted space, where every detail exudes elegance and charm. Boasting spacious interiors adorned with chic décor and high-end finishes, Stylish Apartment sets the standard for modern living.","p3":"Immerse yourself in the panoramic views of London's iconic skyline, serving as the perfect backdrop to your urban oasis. Whether you're lounging in the expansive living area or unwinding on the private balcony, every moment is elevated by the breathtaking vistas that surround you.","p4":"Indulge your culinary passions in the gourmet kitchen, equipped with top-of-the-line appliances and sleek countertops. Entertain guests effortlessly in the open-concept dining area, where conversations flow freely amidst the ambiance of sophistication.","p5":"Retreat to the sumptuous bedrooms, where tranquility and comfort await. Each meticulously designed space offers a sanctuary of relaxation, ensuring a restful night's sleep every time.","p6":"Beyond its lavish interiors, Stylish Apartment provides a wealth of amenities to enhance your lifestyle. From a state-of-the-art fitness center to a serene rooftop terrace, every need is catered to with utmost care and attention.","p7":"Experience the pinnacle of urban luxury at Stylish Apartment – where sophistication meets comfort, and every moment is infused with unparalleled style. Welcome home to the ultimate expression of refined living in the heart of London's dynamic landscape."}
+        
+    }
+    ],
+    
+    "blogs": [
+        {
+            "id":1,
+"images": "https://script.viserlab.com/realvest/assets/images/frontend/blog//thumb_65ec1f75d0b011709973365.png",
+"date": {"day": "08",  "month": "Feb", "week":"Thu","year":"2024"},
+"title": "Overcoming Common Challenges in Real",
+"p1": {"p": "Investing in real estate can be a lucrative venture, but it's not without its challenges. From market fluctuations to regulatory hurdles, navigating the world of real estate investment requires skill, knowledge, and perseverance. In this blog, we'll explore some of the common barriers that investors face and discuss strategies for overcoming them.","h1":"Overcoming Common Challenges in Real Estate Investment"},
+"p2": {"h1": "Market Volatility: A Natural Challenge","p":"One of the most significant challenges in real estate investment is market volatility. The real estate market is subject to fluctuations influenced by factors such as economic conditions, interest rates, and consumer confidence. These fluctuations can make it difficult for investors to predict future returns and plan their investments accordingly. However, savvy investors understand that market volatility is a natural part of the investment landscape and take steps to mitigate its impact.One strategy for overcoming market volatility is diversification. By spreading their investments across different properties and geographic locations, investors can reduce their exposure to risk. Diversification allows investors to capitalize on opportunities in different markets while minimizing the impact of downturns in any one area."},
+"p3": {"h1": "Financing: Overcoming Barriers to Capital","p":"Another common challenge in real estate investment is financing. Securing funding for real estate projects can be challenging, especially for new investors or those with less-than-perfect credit. Traditional lenders may require large down payments and extensive documentation, making it difficult for some investors to access the capital they need.To overcome financing barriers, investors can explore alternative financing options such as private lenders, crowdfunding platforms, or seller financing. These alternative sources of funding may offer more flexible terms and faster approval processes, allowing investors to seize opportunities quickly and efficiently."},
+"p4": {"h1": "Navigating Regulatory Hurdles","p":"Regulatory hurdles are another obstacle that investors may encounter in real estate investment. Local zoning laws, building codes, and permitting requirements can vary widely from one jurisdiction to another, making it essential for investors to understand and comply with all applicable regulations.To navigate regulatory barriers, investors should conduct thorough due diligence and work closely with experienced real estate professionals who understand the local market and regulatory landscape. Building relationships with local officials and stakeholders can also help investors streamline the permitting process and avoid costly delays."},
+"p5": {"h1":"Property Management: A Critical Component","p":"Effective property management is critical to the long-term success of a real estate investment. Investors must ensure that their properties are well-maintained, attract and retain quality tenants, and generate consistent cash flow. This may require outsourcing property management tasks to professionals or investing in technology solutions that streamline the management process. Maintaining positive tenant relations is another key aspect of successful real estate investment. Happy tenants are more likely to renew their leases, take care of the property, and recommend it to others. Investors should strive to provide responsive and attentive customer service, address tenant concerns promptly, and maintain open lines of communication."},
+"p6": {"h1":"Preparing for the Unexpected","p":"Finally, investors must be prepared to deal with unexpected expenses such as repairs, vacancies, or changes in market conditions. Building a financial cushion and conducting regular property inspections can help investors anticipate and mitigate these expenses, ensuring the long-term profitability of their investments","pp": "In conclusion, while real estate investment presents numerous challenges, savvy investors can overcome these barriers and achieve success in the market. By diversifying their portfolios, exploring alternative financing options, understanding and complying with regulatory requirements, and adopting effective property management practices, investors can build a resilient and profitable real estate portfolio. With diligence, patience, and perseverance, breaking barriers in real estate investment is not only possible but highly achievable."}
+        },
+
+        {
+            "id":2,
+            "images":"https://script.viserlab.com/realvest/assets/images/frontend/blog/65ec1c4af26c61709972554.png",
+            "date": {"day": "08",  "month": "feb", "week":"Thu","year":"2024"},
+            "title": "Inspiring Stories from Real Estate Investors",
+            "p1": {"p": "In the dynamic world of real estate investing, success stories abound, each one a testament to the vision, dedication, and resilience of individuals who dared to chase their dreams. One such tale of triumph belongs to Sarah, a determined investor who defied the odds to carve her niche in the competitive real estate market. Starting with modest savings and a burning desire to build wealth, Sarah embarked on her journey with unwavering determination. Despite facing initial hurdles and skepticism from peers, she remained steadfast in her pursuit, leveraging her keen eye for opportunities and willingness to take calculated risks."},
+            "p2": {"h1": "Michael: Transformative Power of Passion","p": "Similarly, the story of Michael serves as a testament to the transformative power of passion and persistence. Coming from humble beginnings, Michael harbored a lifelong fascination with real estate, viewing it not merely as a means to financial gain but as a vehicle for community revitalization and social impact. Armed with this vision, he embarked on a mission to breathe new life into neglected neighborhoods, one property at a time. Despite facing skepticism and naysayers, Michael remained undeterred, pouring his heart and soul into revitalization projects that revitalized communities and provided much-needed affordable housing. His commitment to sustainable development and community engagement earned him not only financial success but also the respect and admiration of his peers."},
+            "p3": {"h1": "Maria: Overcoming Adversity","p":"Then there's the story of Maria, a single mother who overcame adversity to build a thriving real estate empire from scratch. Juggling multiple jobs and familial responsibilities, Maria refused to let her circumstances define her destiny. With unwavering determination and a laser focus on her goals, she embarked on a journey of self-discovery and empowerment. Through sheer grit and resourcefulness, Maria navigated the complexities of the real estate market, leveraging her unique perspective and life experiences to identify lucrative investment opportunities. Her journey serves as a testament to the indomitable spirit of individuals who refuse to be bound by limitations, turning adversity into opportunity and paving the way for a brighter future."},
+            "p4": {"h1":"","p":"These are just a few examples of the countless inspiring stories that illuminate the landscape of real estate investing. Each one is a reminder that success is not merely the result of luck or circumstance but of vision, perseverance, and unwavering determination. As we celebrate these achievements, let us draw inspiration from their journeys and embark on our own paths towards greatness. After all, in the world of real estate investing, the possibilities are as limitless as our imagination and determination to succeed."}
+        },
+        {
+            "id":3,
+            "images": "https://script.viserlab.com/realvest/assets/images/frontend/blog/65ec1d0b9648f1709972747.png",
+            "date": {"day": "08",  "month": "Feb", "week":"Thu","year":"2024"},
+            "title": "The Ultimate Guide to Real Estate Investing",
+            "p1": {"p": "Real estate investing has long been hailed as one of the most lucrative avenues for wealth accumulation. It offers a tangible asset that can appreciate over time, generate passive income, and provide numerous tax benefits. However, navigating the complex world of real estate requires knowledge, strategy, and a solid understanding of the market. In Unlocking Wealth: The Ultimate Guide to Real Estate Investing, we delve into the fundamental principles and strategies that can help both novice and seasoned investors unlock the full potential of real estate."},
+            "p2": {"h1": "Understanding Market Dynamics","p":"At its core, successful real estate investing requires a thorough understanding of the market dynamics. This includes analyzing supply and demand trends, assessing economic indicators, and identifying emerging opportunities. Whether it's residential properties, commercial real estate, or niche markets like vacation rentals or fix-and-flip properties, investors must conduct extensive research to make informed decisions."},
+            "p3": {"h1": "The Importance of Location","p":"One of the key principles emphasized in our guide is the importance of location. The adage location, location, location rings true in real estate investing. A property's location not only determines its potential for appreciation but also influences its rental income and overall demand. Factors such as proximity to amenities, schools, employment centers, and transportation hubs can significantly impact the property's desirability and long-term value."},
+            "p4": {"h1": "Financial Aspects of Real Estate Investing","p":"In addition to location, investors must also consider the financial aspects of real estate investing. This includes evaluating the property's cash flow potential, assessing its return on investment (ROI), and understanding financing options. From traditional mortgages to creative financing strategies like seller financing or private lending, there are various ways to fund real estate investments. Our guide provides insights into the pros and cons of each approach, helping investors choose the most suitable financing strategy for their goals and risk tolerance."},
+            "p5": {"h1": "Tax Benefits and Strategies","p":"Real estate investing"},
+            "p6": {"h1": "Effective Property Management","p":"Moreover, successful real estate investing requires a proactive approach to property management. Whether you're a hands-on investor managing your properties directly or you opt for a hands-off approach by hiring a property management company, effective management is essential for maximizing returns and minimizing risks. This involves ensuring timely rent collection, conducting regular maintenance and repairs, and staying updated on landlord-tenant laws and regulations. "}
+            
+
+
+        },
+        {
+            "id":4,
+            "images": "https://script.viserlab.com/realvest/assets/images/frontend/blog/65ec1e6b4a4061709973099.png",
+            "date": {"day": "21",  "month": "Nov" ,"week":"Tue","year":"2023"},
+            "title": "What is Turn Key Real Estate Investing?",
+            "p1": {"h1": "Investing in Real Estate: A Guide to Turnkey Investing","p": "Investing in real estate can be a lucrative venture, but it often requires significant time, effort, and expertise to find, purchase, renovate, and manage properties successfully. However, turnkey real estate investing offers an alternative approach that appeals to many investors seeking passive income and minimal involvement in the day-to-day operations of property management."},
+            "p2": {"h1": "What is Turnkey Real Estate Investing?","p":"Understanding Turnkey Real Estate Investing"},
+            "p3": {"h1": "The Benefits of Turnkey Real Estate Investingg","p":"One of the primary benefits of turnkey real estate investing is its hands-off nature. Investors can leverage the expertise of turnkey providers to acquire rental properties without the need to personally oversee renovations, tenant screening, or property management tasks. This passive approach appeals to busy professionals, retirees, and investors looking to diversify their portfolios without committing significant time and resources."},
+            "p4": {"h1": "How Turnkey Real Estate Investing Works","p":"Additionally, turnkey properties are often marketed as income-producing assets from day one. Since these properties are typically already leased to tenants, investors can start generating rental income immediately after purchasing them. This immediate cash flow can provide a steady stream of passive income, making turnkey real estate investing an attractive option for those seeking regular returns on their investment."},
+            "p5": {"h1": "Geographic Diversification and Stability","p":"Another advantage of turnkey investing is its potential for geographic diversification. Turnkey providers often operate in multiple markets, allowing investors to spread their risk across different locations and property types. This diversification can help mitigate the impact of local market fluctuations and economic downturns, providing a more stable investment strategy."},
+            "p6": {"h1": "Conclusion","p":"In conclusion, turnkey real estat"}
+                    },
+
+                    {
+                        "id":5,
+                       "images":"https://script.viserlab.com/realvest/assets/images/frontend/blog//thumb_65ec1dda255de1709972954.png",
+                       "date": {"day": "21",  "month": "Nov", "week":"Tue","year":"2023"},
+                       "title": "How to Build Your Real Estate Portfolio",
+                       "p1": {"p": "Are you tired of renting and dreaming of owning multiple properties? Transitioning from being a renter to becoming a real estate investor can be a transformative journey. It's not just about owning a home; it's about building a portfolio that generates passive income and secures your financial future. Here's a guide on how to embark on this exciting path"},
+                       "p2": {"h1": "Educate Yourself: Understanding the Financial Aspects","p":"Firstly, before diving into real estate investing, it's crucial to educate yourself about the financial aspects. Understand concepts like leverage, cash flow, appreciation, and the risks associated with real estate investment. Take courses, read books, and seek guidance from experienced investors or financial advisors"},
+                       "p3": {"h1": "Set Clear Goals: Defining Your Objectives","p":"Once you've gained a solid understanding of the financial fundamentals, set clear goals for your real estate investment journey. Determine your objectives—are you aiming for long-term wealth accumulation, immediate cash flow, or a combination of both? Define your risk tolerance, investment horizon, and target returns. Having clear goals will guide your investment decisions and help you stay focused amidst market fluctuations"},
+                       "p4": {"h1": "Assess Your Financial Situation: Establishing a Solid Foundation","p":"With your goals in mind, assess your current financial situation and establish a solid foundation before diving into real estate. Pay off high-interest debt, build an emergency fund, and ensure you have a stable source of income to cover your living expenses. Having financial stability will provide a safety net as you navigate the challenges of real estate investment"},
+                       "p5": {"h1": "Start Small: Diversifying Your Portfolio","p":"When you're ready to start investing, consider beginning with manageable investments. Start small with a single-family home, duplex, or small multi-unit property. Starting small allows you to gain hands-on experience, learn the ropes of property management, and minimize your financial exposure"},
+                       "p6": {"h1":"Location Matters: Conducting Thorough Research","p":"Location is paramount in real estate investment. Conduct thorough research to identify markets with strong fundamentals, such as job growth, population expansion, and infrastructure development. Analyze local market trends, vacancy rates, rental demand, and comparable property prices to make informed investment decisions"}
+
+                    } ,
+                    {
+                        "id":6,
+                        "images": "https://script.viserlab.com/realvest/assets/images/frontend/blog//thumb_65ec1ec1c185f1709973185.png",
+                        "date": {"day": "07",  "month": "Oct", "week":"Wed","year":"2020"},
+                        "title": "Important Tips for Real Estate Investing Career",
+                        "p1": {"p": "Embarking on a journey into real estate investing demands a comprehensive approach that encompasses various critical factors. Here are ten essential tips to consider as you set foot into this dynamic and potentially lucrative field."},
+                        "p2": {"h1": "Prioritize Education","p":"Real estate investing isn't merely about buying and selling properties; it's about understanding market dynamics, financial analysis, risk assessment, and legal considerations. Equip yourself with knowledge through books, seminars, online courses, and mentorship programs"},
+                        "p3": {"h1": "Define Clear Goals","p":"Clarity in goals is paramount. Define your investment objectives with precision. Are you seeking short-term gains through property flipping, or do you aim for long-term wealth accumulation via rental properties? Establishing clear goals will provide direction and focus amidst the diverse opportunities in the real estate market."},
+                        "p4": {"h1": "Build a Robust Network","p":"Surround yourself with professionals who can offer valuable insights and support, including real estate agents, lenders, contractors, and fellow investors. Cultivating these relationships can provide access to opportunities and resources that may otherwise remain inaccessible."},
+                        "p5": {"h1": "Conduct Thorough Market Research","p":"Stay abreast of local market trends, economic indicators, and demographic shifts that influence property values and rental demand. Conduct thorough analyses to identify emerging opportunities and potential risks in your target areas."},
+                        "p6": {"h1": "Start Small","p":"Beginning with manageable investments such as single-family homes or duplexes allows you to gain valuable experience and mitigate risks as you gradually expand your portfolio."}
+                    }
+    ],
+    "investors": [
+        {
+            "name": "Aphrodite Gay",
+            "image": "https://script.viserlab.com/realvest/assets/images/user/profile/65fc2bbfa2e0b1711025087.jpg",
+            "year": " Join 1 year ago",
+            "properties":"5 Properties",
+            "location":"Afghanistan"
+        
+        },
+        {
+            "name":"Walter Cox",
+            "image":"https://script.viserlab.com/realvest/assets/images/avatar.png",
+            "year": "Join 1 years ago",
+            "properties": "7 Properties",
+            "location":"Bangladesh"
+        },
+        {
+            "name": "Leo Fischer",
+            "image":"https://script.viserlab.com/realvest/assets/images/avatar.png",
+            "year":"Join 1 years ago",
+            "properties":"10 Properties",
+            "location":"British Virgin Islands"
+
+        },
+        {
+            "name": "Tyrone Henson",
+            "image":"https://script.viserlab.com/realvest/assets/images/avatar.png",
+            "year":"Join 1 years ago",
+            "properties":"13 Properties",
+            "location":"Afghanistan"
+        },
+        {
+            "name": "Sugin Serge",
+            "image":"https://script.viserlab.com/realvest/assets/images/avatar.png",
+            "year":"Join 1 years ago",
+            "properties":"8 Properties",
+            "location":"Romania"
+        }
+
+    ]
+    
+}
+]
