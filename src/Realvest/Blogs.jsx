@@ -9,6 +9,7 @@ import Blogscard from './Blogscard';
 function Blogs() {
 
   const [posts, setposts] = useState([])
+  const [name, setname] = useState(second)
 
   useEffect(() => {
     fetch("Propertiesss.json")
