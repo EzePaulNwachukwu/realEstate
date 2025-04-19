@@ -11,52 +11,10 @@ function Header() {
             padding: "50px",
             backgroundColor: "white"
         }}>
-            {/* <header className="header " >
-                <Link to={"/home"}>
-                    <img style={{
-                        width: "150px",
-                    }} src="https://script.viserlab.com/realvest/assets/images/logo_icon/logo.png" alt="" /></Link>
-
-
-
-
-                <div className='headerleft'>
-                    <nav style={{
-                        display: "flex",
-                        gap: "50px",
-                    }}>
-                        <Link to={"/home"}>Home</Link>
-                        <Link to={"/about"}>About</Link>
-                        <Link to={"/Properties"}>Properties</Link>
-                        <Link to={"/blogs"}>Blogs</Link>
-                        <Link to={"/contact"}> Contact</Link>
-                    </nav>
-                    <div className="dropdown">
-                        <Link className="btn  dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://script.viserlab.com/realvest/assets/images/language/65f7c1a85f8f11710735784.png" alt="" />  English
-                        </Link>
-
-                        <ul className="dropdown-menu w-25">
-                            <li><Link className='dropdown-item'><img src="https://script.viserlab.com/realvest/assets/images/language/65f7c142e9bbc1710735682.png" alt="" />  Bangla</Link> </li>
-                            <li><Link className="dropdown-item"><img src="https://script.viserlab.com/realvest/assets/images/language/65f7c1ded01571710735838.png" alt="" />  splanish</Link></li>
-                            <li><Link className="dropdown-item"> <img src="https://script.viserlab.com/realvest/assets/images/language/66544cb2c45ab1716800690.png" alt="" />  Hindi</Link></li>
-                        </ul>
-                    </div>
-
-                    <Button To={"/login"} text={"Login"} />
-
-                </div>
-
-                <div className='hamburger'>
-                    <button style={{ border: "none", fontSize: "30px", backgroundColor: "#ffff" }}><FontAwesomeIcon icon={faBars} /></button>
-                </div>
-
-            </header> */}
-
             <header className='header '>
                 <nav className="navbar   ">
                     <div className="container-fluid ">
-                        <div style={{display:"flex",gap:"150px"}}>
+                        <div style={{ display: "flex", gap: "150px" }}>
 
                             <Link to={"/home"}>
                                 <img style={{
@@ -68,7 +26,7 @@ function Header() {
                                 <nav style={{
                                     display: "flex",
                                     gap: "50px",
-                                    alignItems:"center"
+                                    alignItems: "center"
                                 }}>
                                     <Link to={"/home"}>Home</Link>
                                     <Link to={"/about"}>About</Link>
@@ -96,7 +54,7 @@ function Header() {
                             </button>
                         </div>
 
-                        <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div className="offcanvas offcanvas-end h-50" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div className="offcanvas-header">
                                 <Link to={"/home"}>
                                     <img style={{
@@ -107,7 +65,7 @@ function Header() {
                             <div className="offcanvas-body">
 
                                 <div className="row mt-3 " >
-                                    <div className="dropdown col-7">
+                                    <div className="dropdown col-8">
                                         <Link className="btn  dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <img src="https://script.viserlab.com/realvest/assets/images/language/65f7c1a85f8f11710735784.png" alt="" />  English
                                         </Link>

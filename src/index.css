@@ -53,17 +53,20 @@
   gap: 50px;
 }
 
-.bar{
+.bar {
   border: none !important;
-margin-left: 150px;
+  margin-left: 150px;
 }
-.bar:hover{
+
+.bar:hover {
   border: none;
-  outline: 0px ;
+  outline: 0px;
 }
-.nav2{
+
+.nav2 {
   margin-left: 10px;
   margin-top: 20px;
+  gap: 30px;
 }
 
 @media (max-width: 915px) {
@@ -77,10 +80,8 @@ margin-left: 150px;
 .banner {
   width: 90%;
   margin: auto;
-  /* display: flex; */
-  /* justify-content: space-between; */
-  padding-top: 150px;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 70px;
 }
 
 .bannerh1 {
@@ -122,6 +123,7 @@ margin-left: 150px;
   background-size: cover;
 }
 
+
 .abtimage {
   width: 100%;
   height: 600px;
@@ -153,7 +155,7 @@ margin-left: 150px;
   margin-bottom: 20px;
 }
 
-.flotintabt2{
+.flotintabt2 {
   width: 400px;
   position: relative;
   bottom: 180px;
@@ -187,10 +189,12 @@ margin-left: 150px;
   .flotintabt1 p {
     font-size: 15px;
   }
-  .flotintabt1 h1{
+
+  .flotintabt1 h1 {
     font-size: 20px;
   }
-  .flotintabt2{
+
+  .flotintabt2 {
     width: 200px;
     position: relative;
     bottom: 110px;
@@ -202,14 +206,24 @@ margin-left: 150px;
     gap: 20px;
     align-Items: center
   }
-  .flotintabt2 h1{
+
+  .flotintabt2 h1 {
     font-size: 20px;
   }
-  .flotintabt2 p{
+
+  .flotintabt2 p {
     font-size: 15px;
   }
-  .innerimg{
+
+  .innerimg {
     width: 100px;
+  }
+
+
+  .Aboutbanna {
+    background-image: url("https://script.viserlab.com/realvest/assets/images/frontend/breadcrumb/65c469d3e22771707370963.png");
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -332,7 +346,7 @@ margin-left: 150px;
 
 
 .footer h4 {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .footer p {
@@ -369,7 +383,7 @@ margin-left: 150px;
 
 .contact .box {
   border: 1px solid #CC5200;
- 
+
   display: flex;
   align-items: center;
   padding: 25px;
@@ -377,10 +391,11 @@ margin-left: 150px;
   border-radius: 15px;
   margin: 100px 0px 100px 0px;
 }
+
 @media (max-width:915px) {
   .contact .box {
     border: 1px solid #CC5200;
-   
+
     display: flex;
     align-items: center;
     padding: 25px;
@@ -497,10 +512,12 @@ label span {
     padding: 20px;
     margin-top: 50px;
   }
+
   .socials a span {
     text-decoration: none;
     font-size: 15px;
   }
+
   .socials {
     display: flex;
     justify-content: space-between;
@@ -508,6 +525,7 @@ label span {
     margin: 0px 0px 0px 0px;
     align-items: center;
   }
+
   .socials-facebook {
 
     background-color: #dce1ea;
@@ -517,6 +535,7 @@ label span {
     border-radius: 8px;
     color: #1877F2;
   }
+
   .socials-google {
     width: 33%;
     padding: 2px;
@@ -525,6 +544,7 @@ label span {
     background-color: #e0d2d1;
     color: #E94235;
   }
+
   .socials-linkdin {
     width: 33%;
     padding: 2px;
@@ -533,13 +553,16 @@ label span {
     background-color: #cddde5;
     color: #0077B5;
   }
+
   .socials img {
     margin-right: 0px !important;
   }
-  .formheader .formhimag{
+
+  .formheader .formhimag {
     width: 50px;
   }
 }
+
 /* 2 */
 .check {
   display: flex;

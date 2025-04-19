@@ -155,13 +155,12 @@ function Home() {
         <p style={{
           color: "#FF6600",
           backgroundColor: "#FFF0E6",
-          width: "20%",
           fontSize: "18px",
           padding: "8px"
-        }}>Featured properties</p>
-        <div style={{ display: "flex", justifyContent: "space-between" }} >
-          <h1>All Properties Spotlight</h1>
-          <Link to={"/properties"} style={{ textDecoration: "none", color: "#ff6600", fontSize: "26px" }}>Explore <span><FontAwesomeIcon icon={faArrowRight} /></span> </Link>
+        }} className='w-50'>Featured properties</p>
+        <div style={{ justifyContent: "space-between" }} className="row" >
+          <h1 className='col-lg-10 col-sm-10'>All Properties Spotlight</h1>
+          <Link className='col-lg-2 col-sm-6' to={"/properties"} style={{ textDecoration: "none", color: "#ff6600", fontSize: "26px" }}>Explore <span><FontAwesomeIcon icon={faArrowRight} /></span> </Link>
         </div>
 
         <div style={{ paddingTop: "50px" }}>

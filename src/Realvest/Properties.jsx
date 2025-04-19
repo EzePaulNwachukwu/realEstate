@@ -48,8 +48,8 @@ function Properties() {
       <Sectionbanna section={"Properties"} />
 
 
-      <div className='row container-xxl' style={{justifyContent:"space-between" }}>
-        <div className='col-lg-3 col-sm-10' style={{backgroundColor:"white", padding:"20px",height:"750px",marginBottom:"50px"}} >
+      <div className='row container-xxl my-5' style={{justifyContent:"space-between" }}>
+        <div className='col-lg-3 col-sm-10' style={{backgroundColor:"white", padding:"20px",height:"600px",marginBottom:"50px",marginLeft:"20px"}} >
           <aside id="property-page-sidebar" className="property-page-sidebar ">
             <button className="filter" type="button">
               <i className="fas fa-times"></i>

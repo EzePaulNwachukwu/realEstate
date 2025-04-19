@@ -9,8 +9,7 @@ function AboutCard() {
                 justifyContent: "space-between",
             }}>
                 <div className='col-lg-5 col-sm-12  ' style={{
-
-                    marginTop: "100px"
+                    marginTop: "50px"
                 }}>
                     <p style={{
                         color: "#FF6600",

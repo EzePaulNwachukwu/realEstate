@@ -38,14 +38,14 @@ function Realfooter() {
               <img src="https://script.viserlab.com/realvest/assets/templates/basic/images/facebook.svg" alt="" />
             </div>
           </div>
-          <div className='col-lg-2 col-sm-7 my-5' >
+          <div className='col-lg-2 col-sm-7 my-3' >
             <h4>Quick Link</h4>
             <li> <Link to={'/home'}>Home</Link></li>
             <li> <Link to={'/blogs'}>Blogs</Link></li>
             <li> <Link to={'/contact'}>Contact us</Link></li>
           </div>
 
-          <div className='col-lg-3 col-sm-7  my-5'>
+          <div className='col-lg-3 col-sm-7  my-3'>
             <h4>Contact us</h4>
             <div>
 
@@ -59,8 +59,7 @@ function Realfooter() {
             </div>
           </div>
           <div style={{
-            //  width: "30%"
-              }} className='col-lg-4 col-sm-11 my-sm-5'>
+              }} className='col-lg-4 col-sm-11 my-sm-3'>
             <h4>Subscribe for updates</h4>
             <p>Stay on top of the latest blog posts, news and announcements</p>
             <input type="email" placeholder="Enter Address" style={{ width: "100%", border: "none", backgroundColor: "#002C45", marginBottom: "50px", paddingBottom: "10px", borderBottom: "1px solid #9eb0ba" }} />
