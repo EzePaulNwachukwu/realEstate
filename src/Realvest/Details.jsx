@@ -42,8 +42,10 @@ function Details() {
 
             {
                 loading ? (
-                    <div className='container' style={{ display: "flex", justifyContent: "space-between", paddingTop: "100px", paddingBottom: "100px" }}>
-                        <div style={{ width: "55%" }}>
+                    <div className='container-xxl row m-auto gap-5' style={{ paddingTop: "100px", paddingBottom: "100px" }}>
+                        <div  className="col-lg-7 col-sm-10" style={{ 
+                            // width: "55%"
+                             }}>
 
                             <div style={{ backgroundColor: "white", padding: "20px", marginTop: "15px", borderRadius: "10px", marginBottom: "20px" }}>
 
@@ -112,6 +114,9 @@ function Details() {
 
                                 <div>
                                     <h3>Location</h3>
+                                    <div>
+                                    <iframe src={product.locationmap} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style={{ width:"100%", height:"400px", border:"0"}}></iframe>
+                                    </div>
                                 </div>
                             </div>
 
@@ -121,7 +126,9 @@ function Details() {
 
                         </div>
 
-                        <div className='left' style={{ width: "43%" }}>
+                        <div className='left col-lg-4 col-sm-10 ml-2' style={{ 
+                            // width: "43%" 
+                            }}>
                             <div>
                                 <h3>{product.price}</h3>
                                 <p>Per share amount</p>

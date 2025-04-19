@@ -11,7 +11,7 @@ function Blogscard({ image, title,goto, p1, day, month }) {
     const previewText = words.slice(0, 24).join(" ");
 
     return (
-        <div style={{}}>
+        <div  className='col-lg-4 col-sm-12 my-3'>
             <div className="card" style={{ width: "23rem", }}>
                 <Link to={goto}> <img src={image} className="card-img-top" alt="..." /></Link>
 

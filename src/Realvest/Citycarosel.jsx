@@ -17,7 +17,7 @@ function Citycarosel() {
         { src: "https://script.viserlab.com/realvest/assets/images/location/65ebfce1b41bd1709964513.png", title: "San Francisco, USA", description: "1  Property" }
     ];
     const [index, setIndex] = useState(0);
-    const imagesPerSlide = 4;
+    const imagesPerSlide = 4
 
     const nextSlide = () => {
         setIndex((prev) => (prev + 1) % myImages.length);
@@ -27,8 +27,11 @@ function Citycarosel() {
         setIndex((prev) => (prev - 1 + myImages.length) % myImages.length);
     };
 
-    // Auto-slide every 3 seconds
+    // Auto-slide every 3
+    //  seconds
     useEffect(() => {
+
+
         const interval = setInterval(() => {
             setIndex((prevIndex) => (prevIndex + 1) % myImages.length);
         }, 3000);
@@ -53,24 +56,24 @@ function Citycarosel() {
                 <div style={{ display: "flex", justifyContent: "space-between" }} >
                     <h1>Explore By Cities</h1>
                     <div>
-                        <button className="btn  me-2" onClick={prevSlide}><FontAwesomeIcon icon={faAngleLeft}/></button>
+                        <button className="btn  me-2" onClick={prevSlide}><FontAwesomeIcon icon={faAngleLeft} /></button>
 
-                        <button className="btn  ms-2" style={{}} onClick={nextSlide}><FontAwesomeIcon icon={faAngleRight}/></button>
+                        <button className="btn  ms-2" style={{}} onClick={nextSlide}><FontAwesomeIcon icon={faAngleRight} /></button>
 
                     </div>
 
                 </div>
-                <div style={{paddingTop:"50px"}}>
-                    <div className="row d-flex  ">
+                <div style={{ paddingTop: "50px" }}>
+                    <div className=" row ">
                         {Array.from({ length: imagesPerSlide }).map((_, i) => {
                             // Ensure seamless looping by wrapping around
                             const imgIndex = (index + i) % myImages.length;
                             return (
-                                <div key={imgIndex} className="col-md-3 " style={{display:"flex"}}>
+                                <div key={imgIndex} className="col-lg-3 col-sm-7 m-auto h-sm-50">
                                     <div className="image-container " >
                                         <img src={myImages[imgIndex].src} className="img-fluid rounded image" alt={myImages[imgIndex].title} />
                                         <div className="overlay">
-                                           <Link style={{textDecoration:"none",color:"#ff6600"}}><h4>{myImages[imgIndex].title}</h4></Link> 
+                                            <Link style={{ textDecoration: "none", color: "#ff6600" }}><h4>{myImages[imgIndex].title}</h4></Link>
                                             <p>{myImages[imgIndex].description}</p>
                                         </div>
                                     </div>

@@ -7,8 +7,8 @@ import Button from './Button'
 
 function Propcard({ image,goto, title, located, investors, price, profit, bar, sschedule, capitalback, }) {
     return (
-        <div>
-            <div class="card" style={{ width: "23rem", border: "none"  }}>
+        <div  className='col-lg-4 col-sm-12 mb-5'>
+            <div className="card " style={{ width: "23rem", border: "none"  }}>
                 <Link to={goto}>
                 <img style={{ width: "100%",height:"100%", borderTopLeftRadius: "20px", borderTopRightRadius: "20px" }} src={image} class="Property image" alt="..." />
                 

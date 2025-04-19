@@ -4,16 +4,21 @@ import { Link } from 'react-router-dom'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import Button from './Button'
 
-function Propcardsec({ image,goto, title, located, investors, price, profit, bar, sschedule, capitalback, }) {
+function Propcardsec({ image, goto, title, located, investors, price, profit, bar, sschedule, capitalback, }) {
     return (
         <div>
-            <div style={{ border: "none", display: "flex", justifyContent: "space-between", paddingBottom: "50px" }}>
+            <div style={{
+                border: "none", justifyContent: "space-between", paddingBottom: "50px"
+            }} className='row my-2'>
 
-                <Link to={goto} style={{ textDecoration: "none", color: "black" ,width:"50%"}}>
-                    <img style={{ width: "100%", height: "100%", borderBottomLeftRadius: "20px", borderTopLeftRadius: "20px" }} src={image} class="Property image" alt="..." />
+                <Link to={goto}  className='col-lg-6 col-sm-12 imagecover' >
+                    <img
+                      src={image} class="Property image  propimage" alt="..." />
                 </Link>
 
-                <div class="card-body" style={{ padding: "15px", paddingBottom: "50px", backgroundColor: "#FFFFFF", borderTopRightRadius: "20px", borderBottomRightRadius: "20px" }}>
+                <div class="card-body col-lg-6 col-sm-10" style={{
+                    // padding: "15px", paddingBottom: "50px", backgroundColor: "#FFFFFF", borderTopRightRadius: "20px", borderBottomRightRadius: "20px"
+                }}>
                     <div style={{ paddingTop: "10px", paddingBottom: "15px" }}>
                         <Link> <h4 class="card-title"> {title}</h4></Link>
                         <p class="card-text"> <span style={{ color: " #ff6600" }}> <FontAwesomeIcon icon={faLocationDot} /> </span> {located}</p>
@@ -22,7 +27,7 @@ function Propcardsec({ image,goto, title, located, investors, price, profit, bar
                         {bar}
                         <p>{investors}</p>
                     </div>
-                    <div style={{ display: "flex", gap: "10px", alignItems: "center", paddingTop: "15px"}}>
+                    <div style={{ display: "flex", gap: "10px", alignItems: "center", paddingTop: "15px" }}>
                         <div>
                             <b style={{ color: "#ff6600" }}>{profit}</b>
                             <p>Profit</p>                        </div>

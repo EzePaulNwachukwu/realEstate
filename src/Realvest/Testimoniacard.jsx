@@ -9,7 +9,7 @@ function Testimoniacard({ testimony, profile, username, country }) {
      
       <div  style={{paddingLeft:"10px"}}>
         <p style={{
-          fontSize: "18px",
+          fontSize: "16px",
           color: "#959393",
           fontFamily: "Arial",
         }} >{testimony}</p>

@@ -9,7 +9,6 @@ import Blogscard from './Blogscard';
 function Blogs() {
 
   const [posts, setposts] = useState([])
-  const [name, setname] = useState(second)
 
   useEffect(() => {
     fetch("Propertiesss.json")
@@ -23,7 +22,7 @@ function Blogs() {
     <div >
 
       <Sectionbanna section={"Blogs"} />
-      <div style={{ display: "grid", gridTemplateColumns: "auto auto auto ", gap: "20px" ,paddingTop:"100px",paddingBottom:"100px"}} className="container " >
+      <div  className=" row blogpage"  >
 
         {
           posts.map((post) => (

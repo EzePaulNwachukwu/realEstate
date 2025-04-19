@@ -34,8 +34,8 @@ function Contact() {
 
       <div className='container'>
 
-        <div className=' boxwrap'>
-          <div className='box'>
+        <div className=' boxwrap row container-xxl'>
+          <div className='box col-lg-4 col-sm-8'>
             <span><FontAwesomeIcon icon={faPhoneAlt} /></span>
 
             <div>
@@ -45,7 +45,7 @@ function Contact() {
               </p>
             </div>
           </div>
-          <div className='box'>
+          <div className='box col-lg-4 col-sm-8'>
             <span><FontAwesomeIcon icon={faEnvelope} /></span>
 
             <div>
@@ -55,7 +55,7 @@ function Contact() {
               </p>
             </div>
           </div>
-          <div className='box'>
+          <div className='box col-lg-4 col-sm-8'>
             <span><FontAwesomeIcon icon={faLocationDot} /></span>
 
             <div>
@@ -67,9 +67,11 @@ function Contact() {
           </div>
         </div>
 
-        <div style={{ display: "flex", gap: "10px" }} className='contactform'>
-          <img style={{ width: "50%" }} src="https://script.viserlab.com/realvest/assets/images/frontend/contact_us/65c46977ae0b91707370871.png" alt="" />
-          <div style={{ width: "50%" }}>
+        <div style={{ 
+          // display: "flex", 
+          gap: "10px" }} className='contactform row'>
+          <img  src="https://script.viserlab.com/realvest/assets/images/frontend/contact_us/65c46977ae0b91707370871.png" alt="" className='col-lg-7 col-sm-10 ' />
+          <div className='col-lg-5 col-sm-10'>
             <h3>Get in Touch</h3>
             <p>Let's ask your questions</p>
             <div>

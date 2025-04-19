@@ -37,7 +37,7 @@ function Register() {
         <div className='wrapform'>
 
           <div className='formheader'>
-            <img style={{ width: "250px" }} src="https://script.viserlab.com/realvest/assets/images/logo_icon/logo.png" alt="logo" />
+            <img className='formhimag' style={{ width: "250px" }} src="https://script.viserlab.com/realvest/assets/images/logo_icon/logo.png" alt="logo" />
             <h5 >Create an Account</h5>
 
 
@@ -89,7 +89,7 @@ function Register() {
                   <div>
                     <label htmlFor="password">Password <span>*</span></label>
                     <small style={{ color: "red" }}>{formiks.touched.password && formiks.errors.password ? <small>{formiks.errors.password}</small> : null} </small>
-                    <Field type="password" name="password" className="lnputgroup" {...formiks.getFieldProps('email')}  />
+                    <Field type="password" name="password" className="lnputgroup" {...formiks.getFieldProps('password')}  />
                   </div>
                   <div>
                     <label htmlFor="confirm_password">Confirm Password <span>*</span></label>

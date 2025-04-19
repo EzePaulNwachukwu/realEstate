@@ -30,7 +30,7 @@ function Login() {
     <div style={{ backgroundColor: "#F5F5F5", paddingTop: "50px", paddingBottom: "100px" }}>
       <div className='formcontainer'>
         <div className='formheader'>
-          <img style={{ width: "250px" }} src="https://script.viserlab.com/realvest/assets/images/logo_icon/logo.png" alt="logo" />
+          <img className='formhimag' style={{ width: "250px" }} src="https://script.viserlab.com/realvest/assets/images/logo_icon/logo.png" alt="logo" />
           <h5 >Account Login</h5>
           <div className='socials'>
             <Link className='socials-facebook'>

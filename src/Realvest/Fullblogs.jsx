@@ -31,8 +31,12 @@ function Fullblogs() {
 
             {
                 loading ?
-                    (<div className='container' style={{ display: "flex", justifyContent: "space-between", paddingTop: "100px", paddingBottom: "100px" }}>
-                        <div className='left' style={{ width: "60%", backgroundColor: "white", padding: "20px", marginTop: "15px", borderRadius: "10px", marginBottom: "20px" }}>
+                    (<div className='container row' style={{
+                        //  display: "flex",
+                          justifyContent: "space-between", paddingTop: "100px", paddingBottom: "100px" }}>
+                        <div className='left col-lg-8 col-sm-11' style={{
+                            //  width: "60%",
+                              backgroundColor: "white", padding: "20px", marginTop: "15px", borderRadius: "10px", marginBottom: "20px" }} >
                             <div>
                                 <img src={post.images} alt="post" style={{ width: "100%", borderRadius: "15px", marginBottom: "50px" }} />
                             </div>
@@ -47,7 +51,9 @@ function Fullblogs() {
                             <p>{post.p4.p}</p>
                         </div>
 
-                        <div className='right' style={{ width: "35%", height: "750px", backgroundColor: "white", padding: "30px", marginTop: "15px", borderRadius: "10px", marginBottom: "20px" }}>
+                        <div className='right col-lg-4 col-sm-11' style={{
+                            //  width: "35%",
+                              height: "750px", backgroundColor: "white", padding: "30px", marginTop: "15px", borderRadius: "10px", marginBottom: "20px" }}>
                             <h3>Latest Posts</h3>
                             {
                                 latest.map((item, index) => (
