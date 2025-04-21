@@ -6,11 +6,11 @@ import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-
 
 function Realfooter() {
   return (
-    <div style={{
+    <div className='footermain' style={{
       backgroundColor: "#002C45",
       color: "#ffff",
-      paddingTop: "50px",
-      paddingBottom: "20px",
+      // paddingTop: "50px",
+      // paddingBottom: "20px",
     }}>
 
       <div className='container'>

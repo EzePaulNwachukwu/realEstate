@@ -13,7 +13,6 @@ import Testimoniacard from './Testimoniacard'
 import Blogscard from './Blogscard';
 import Citycarosel from './Citycarosel'
 import Brandscarose from './Brandscarose'
-import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons/faAngleDoubleUp'
 
 
 
@@ -48,7 +47,7 @@ function Home() {
             fontWeight: "bold",
           }}>Smart & secure real estate investment platform</p>
           <h1 className='  bannerh1'>Invest in The Future of Real Estate</h1>
-          <Button text={"Get Started"} />
+          <Button To={"/register"} text={"Get Started"} />
           <div style={{
             display: "flex",
             gap: "50px",
@@ -87,7 +86,7 @@ function Home() {
           paddingBottom: "50px"
         }} >
           <div>
-            <p className='sm-w-100 lg-w-25 p-1 ' style={{
+            <p className='  w-sm-50 m-auto p-1 ' style={{
               color: "#FF6600",
               backgroundColor: "#FFF0E6",
 
@@ -247,7 +246,7 @@ function Home() {
           // width: "10%",
           fontSize: "18px",
           padding: "8px"
-        }} className='w-lg-25 w-sm-25'>Our blogs</p>
+        }} className='w-50'>Our blogs</p>
         <div  className="row" style={{  justifyContent: "space-between" }} >
           <h1 className='col-lg-8 col-sm-10'>Latest News & Articles</h1>
           <Link className='col-lg-4 col-sm-7' to={"/blogs"} style={{ textDecoration: "none", color: "#ff6600", fontSize: "26px" }}>Explore <span><FontAwesomeIcon icon={faArrowRight} /></span> </Link>
@@ -270,10 +269,6 @@ function Home() {
 
       </div>
 
-      <div style={{ textAlign: "end" }}>
-        <Link style={{ textDecoration: "none", color: "white", fontSize: "30px", backgroundColor: "#ff6600", padding: "10px", borderRadius: "50%" }}><FontAwesomeIcon icon={faAngleDoubleUp} /></Link>
-
-      </div>
 
     </div>
   )

@@ -12,6 +12,7 @@ import Details from './Realvest/Details';
 import Fullblogs from './Realvest/Fullblogs';
 import Privacypolicy from './Realvest/Privacypolicy';
 import Terms from './Realvest/Terms';
+import ScrollToTopButton from './Realvest/Scroolbtn';
 
 
 
@@ -20,6 +21,8 @@ function App() {
   return (
     
     <>
+<ScrollToTopButton/>
+
 <Routes>
 <Route path='/'element={<Home/>} />
 <Route path='/home'element={<Home/>} />
@@ -34,7 +37,6 @@ function App() {
 <Route path='/details/:id' element={<Details/>}/>
 <Route path='/blogpost/:id' element={<Fullblogs/>}/>
 <Route path='*' element={<Notfoundpage/>}/>
-
 </Routes>
     </>
   );

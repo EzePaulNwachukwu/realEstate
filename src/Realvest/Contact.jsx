@@ -68,10 +68,10 @@ function Contact() {
         </div>
 
         <div style={{ 
-          // display: "flex", 
-          gap: "10px" }} className='contactform row'>
-          <img  src="https://script.viserlab.com/realvest/assets/images/frontend/contact_us/65c46977ae0b91707370871.png" alt="" className='col-lg-7 col-sm-10 ' />
-          <div className='col-lg-5 col-sm-10'>
+          gap:"50px"
+         }} className='contactform row'>
+          <img  src="https://script.viserlab.com/realvest/assets/images/frontend/contact_us/65c46977ae0b91707370871.png" alt="" className='col-lg-6 col-sm-10 ' />
+          <div className='col-lg-4 col-sm-10'>
             <h3>Get in Touch</h3>
             <p>Let's ask your questions</p>
             <div>

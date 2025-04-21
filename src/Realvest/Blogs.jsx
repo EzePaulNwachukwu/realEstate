@@ -22,7 +22,7 @@ function Blogs() {
     <div >
 
       <Sectionbanna section={"Blogs"} />
-      <div  className=" row blogpage"  >
+      <div  className=" row blogpage "  >
 
         {
           posts.map((post) => (

@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -18,18 +16,15 @@
   border-radius: 50%;
 }
 
-.header a {
+.header a , .offcanvas a{
   text-decoration: none;
   color: black;
   font-size: 20px;
 }
 
-.header a:hover {
+.header a:hover,.offcanvas a:hover {
   color: #CC5200;
 }
-
-
-
 
 .header {
   display: flex;
@@ -45,6 +40,18 @@
   transition: transform 0.3s ease;
   z-index: 1000;
 }
+
+
+.header.hide {
+  transform: translateY(-100%);
+}
+
+.header.show {
+  transform: translateY(0);
+}
+
+
+
 
 .headerleft {
   /* margin-left: 10px; */
@@ -342,8 +349,9 @@
   padding: 50px 0px 100px 0px;
 
 }
-
-
+.footermain {
+  padding-bottom: 100px;
+}
 
 .footer h4 {
   padding-bottom: 10px;
