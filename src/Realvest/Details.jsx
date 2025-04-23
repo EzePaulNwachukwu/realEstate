@@ -43,9 +43,9 @@ function Details() {
             {
                 loading ? (
                     <div className='container-xxl row m-auto gap-5' style={{ paddingTop: "100px", paddingBottom: "100px" }}>
-                        <div  className="col-lg-7 col-sm-10" style={{ 
+                        <div className="col-lg-7 col-md-12 col-sm-10" style={{
                             // width: "55%"
-                             }}>
+                        }}>
 
                             <div style={{ backgroundColor: "white", padding: "20px", marginTop: "15px", borderRadius: "10px", marginBottom: "20px" }}>
 
@@ -115,7 +115,7 @@ function Details() {
                                 <div>
                                     <h3>Location</h3>
                                     <div>
-                                    <iframe src={product.locationmap} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style={{ width:"100%", height:"400px", border:"0"}}></iframe>
+                                        <iframe src={product.locationmap} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style={{ width: "100%", height: "400px", border: "0" }}></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -126,150 +126,303 @@ function Details() {
 
                         </div>
 
-                        <div className='left col-lg-4 col-sm-10 ml-2' style={{ 
-                            // width: "43%" 
-                            }}>
+                        <div className='left col-lg-4 col-md-12 col-sm-10 ml-2'>
                             <div>
                                 <h3>{product.price}</h3>
                                 <p>Per share amount</p>
                             </div>
-
-                            <button style={{ width: "100%", backgroundColor: "#ff6600", padding: "15px", borderRadius: "10px", border: "none" }}>  <Link style={{ color: "white", textDecoration: "none", fontSize: "18px" }}>Invest Now</Link> </button>
-
-                            <div className='card-body' style={{ backgroundColor: "white", padding: "20px", marginTop: "20px", borderRadius: "10px" }}>
-                                <div>
-                                    <p>Available share:</p>
-                                    <div style={{ height: "10px", backgroundColor: "#FFF0E6" }} className="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        <div style={{ backgroundColor: "#ff6600", width: product.progressbar, }}></div>
-                                    </div>
-                                    <p style={{ fontSize: "12px" }}>{product.investors}</p>
-                                </div>
-
-                                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                    <p>Investment Type</p>
-                                    <p>{product.InvestmentType}</p>
-                                </div><div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                    <p>Down Payment</p>
-                                    <p>{product.DownPayment}</p>
-                                </div>
-                                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                    <p>Initial Invest Amount</p>
-                                    <p>{product.InitialInvestAmount}</p>
-                                </div>
-                                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                    <p>Total Installments</p>
-                                    <p>{product.TotalInstallments}</p>
-                                </div>
-                                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                    <p>Per Installment Amount</p>
-                                    <p>{product.PerInstallmentAmount}</p>
-                                </div>
-                                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                    <p>Installment Schedule</p>
-                                    <p>{product.InstallmentSchedule}</p>
-                                </div>
-                                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                    <p>Installment Late Fee</p>
-                                    <p>{product.InstallmentLateFee}</p>
-                                </div>
-                                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                    <p>Profit Repeat</p>
-                                    <p>{product.ProfitRepeat}</p>
-                                </div>
-                                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                    <p>Profit Schedule</p>
-                                    <p>{product.repeatSchedule}</p>
-                                </div>
-                                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                    <p>Profit Back</p>
-                                    <p>{product.ProfitBack}</p>
-                                </div>
-
-                                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                    <p>Capital Back</p>
-                                    <p>{product.CapitalBack ? (<p>Yes</p>) : (<p>No</p>)}</p>
-                                </div>
-
-                            </div>
-
-                            <div style={{ backgroundColor: "white", padding: "20px", marginTop: "15px", borderRadius: "10px" }}>
-                                <h3>Property Video</h3>
-
-                                <div>
-                                    <iframe width="100%" height="300" src={product.video} title="Real Estate Video Tour |  Sony A7siii | Toronto, Ontario" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                </div>
-
+                            <div className='row'>
+                                <button className='col-lg-12 col-sm-4 col-md-5 w-50' style={{ backgroundColor: "#ff6600", padding: "15px", borderRadius: "10px", border: "none" }}>  <Link style={{ color: "white", textDecoration: "none", fontSize: "18px" }}>Invest Now</Link> </button>
+                                <button className="btn filter w-25  d-sm-flex d-lg-none d-md-flex col-sm-4 col-md-4" style={{ padding: "15px", borderRadius: "10px", fontSize:"20px",textAlign:"center" ,marginLeft:"10px"}} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">More Details</button>
                             </div>
 
 
-                            <div style={{ backgroundColor: "white", padding: "20px", marginTop: "20px", borderRadius: "10px" }}>
+                            <div className="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                                <div className="offcanvas-header">
+                                    <h5 className="offcanvas-title" id="offcanvasScrollingLabel">Property Details</h5>
+                                    <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div className="offcanvas-body">
 
-                                <div>
-                                    <div style={{ paddingBottom: "10px" }}>
-                                        <h3>Real Estate Investor</h3>
-                                    </div>
-
-                                    <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
-                                        <div className="carousel-inner">
-                                            <div className="carousel-item active">
-                                                <Investorscard image={investors[0].image} location={investors[0].location} yearjoined={investors[0].year} propertyowned={investors[0].properties} investor={investors[0].name} />
+                                    <div className='card-body' style={{ backgroundColor: "white", padding: "20px", marginTop: "20px", borderRadius: "10px" }}>
+                                        <div>
+                                            <p>Available share:</p>
+                                            <div style={{ height: "10px", backgroundColor: "#FFF0E6" }} className="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                <div style={{ backgroundColor: "#ff6600", width: product.progressbar, }}></div>
                                             </div>
-                                            <div className="carousel-item">
-                                                <Investorscard image={investors[1].image} location={investors[1].location} yearjoined={investors[1].year} propertyowned={investors[1].properties} investor={investors[1].name} />
-
-                                            </div>
-                                            <div className="carousel-item">
-                                                <Investorscard image={investors[2].image} location={investors[2].location} yearjoined={investors[2].year} propertyowned={investors[2].properties} investor={investors[2].name} />
-
-                                            </div>
-                                            <div className="carousel-item">
-                                                <Investorscard image={investors[3].image} location={investors[3].location} yearjoined={investors[3].year} propertyowned={investors[3].properties} investor={investors[3].name} />
-                                            </div>
-                                            <div className="carousel-item">
-                                                <Investorscard image={investors[4].image} location={investors[4].location} yearjoined={investors[4].year} propertyowned={investors[4].properties} investor={investors[4].name} />
-                                            </div>
+                                            <p style={{ fontSize: "12px" }}>{product.investors}</p>
                                         </div>
 
-                                        <button style={{ color: "#ff6600" }} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                            <span aria-hidden="true"> <FontAwesomeIcon icon={faAngleLeft} /></span>
-                                            <span className="visually-hidden">Previous</span>
-                                        </button>
-                                        <button style={{ color: "#ff6600" }} className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                            <span aria-hidden="true" ><FontAwesomeIcon icon={faAngleRight} /></span>
-                                            <span className="visually-hidden">Next</span>
-                                        </button>
+                                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                            <p>Investment Type</p>
+                                            <p>{product.InvestmentType}</p>
+                                        </div><div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                            <p>Down Payment</p>
+                                            <p>{product.DownPayment}</p>
+                                        </div>
+                                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                            <p>Initial Invest Amount</p>
+                                            <p>{product.InitialInvestAmount}</p>
+                                        </div>
+                                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                            <p>Total Installments</p>
+                                            <p>{product.TotalInstallments}</p>
+                                        </div>
+                                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                            <p>Per Installment Amount</p>
+                                            <p>{product.PerInstallmentAmount}</p>
+                                        </div>
+                                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                            <p>Installment Schedule</p>
+                                            <p>{product.InstallmentSchedule}</p>
+                                        </div>
+                                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                            <p>Installment Late Fee</p>
+                                            <p>{product.InstallmentLateFee}</p>
+                                        </div>
+                                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                            <p>Profit Repeat</p>
+                                            <p>{product.ProfitRepeat}</p>
+                                        </div>
+                                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                            <p>Profit Schedule</p>
+                                            <p>{product.repeatSchedule}</p>
+                                        </div>
+                                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                            <p>Profit Back</p>
+                                            <p>{product.ProfitBack}</p>
+                                        </div>
+
+                                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                            <p>Capital Back</p>
+                                            <p>{product.CapitalBack ? (<p>Yes</p>) : (<p>No</p>)}</p>
+                                        </div>
 
                                     </div>
-                                </div>
 
-                            </div>
+                                    <div style={{ backgroundColor: "white", padding: "20px", marginTop: "15px", borderRadius: "10px" }}>
+                                        <h3>Property Video</h3>
 
-                            <div style={{ backgroundColor: "white", padding: "20px", marginTop: "15px", borderRadius: "10px" }}>
-                                <h3>Latest Property</h3>
-                                {
-                                    latest.map((late) => (
+                                        <div>
+                                            <iframe width="100%" height="300" src={product.video} title="Real Estate Video Tour |  Sony A7siii | Toronto, Ontario" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        </div>
 
-                                        <div style={{ display: "flex", gap: "20px", alignItems: "center", marginTop: "20px" }}>
-                                            <Link to={`/details/${late.id}`}><img src={late.images.building} alt="" style={{ width: "120px", borderRadius: "10px", }} /></Link>
-                                            <div className="property-details-card__content ">
-                                                <h6 className="title">
-                                                    <Link to={`/details/${late.id}`} style={{ textDecoration: "none", color: "#ff6600" }}>
-                                                        {late.tittle}
-                                                    </Link>
-                                                </h6>
-                                                <div className="location">
-                                                    <FontAwesomeIcon icon={faLocationDot} style={{ marginRight: "10px" }} />
+                                    </div>
 
-                                                    <span>{late.location}</span>
+
+                                    <div style={{ backgroundColor: "white", padding: "20px", marginTop: "20px", borderRadius: "10px" }}>
+
+                                        <div>
+                                            <div style={{ paddingBottom: "10px" }}>
+                                                <h3>Real Estate Investor</h3>
+                                            </div>
+
+                                            <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+                                                <div className="carousel-inner">
+                                                    <div className="carousel-item active">
+                                                        <Investorscard image={investors[0].image} location={investors[0].location} yearjoined={investors[0].year} propertyowned={investors[0].properties} investor={investors[0].name} />
+                                                    </div>
+                                                    <div className="carousel-item">
+                                                        <Investorscard image={investors[1].image} location={investors[1].location} yearjoined={investors[1].year} propertyowned={investors[1].properties} investor={investors[1].name} />
+
+                                                    </div>
+                                                    <div className="carousel-item">
+                                                        <Investorscard image={investors[2].image} location={investors[2].location} yearjoined={investors[2].year} propertyowned={investors[2].properties} investor={investors[2].name} />
+
+                                                    </div>
+                                                    <div className="carousel-item">
+                                                        <Investorscard image={investors[3].image} location={investors[3].location} yearjoined={investors[3].year} propertyowned={investors[3].properties} investor={investors[3].name} />
+                                                    </div>
+                                                    <div className="carousel-item">
+                                                        <Investorscard image={investors[4].image} location={investors[4].location} yearjoined={investors[4].year} propertyowned={investors[4].properties} investor={investors[4].name} />
+                                                    </div>
                                                 </div>
-                                                <span className="price">
-                                                    {late.price}
-                                                </span>
+
+                                                <button style={{ color: "#ff6600" }} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                                    <span aria-hidden="true"> <FontAwesomeIcon icon={faAngleLeft} /></span>
+                                                    <span className="visually-hidden">Previous</span>
+                                                </button>
+                                                <button style={{ color: "#ff6600" }} className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                                    <span aria-hidden="true" ><FontAwesomeIcon icon={faAngleRight} /></span>
+                                                    <span className="visually-hidden">Next</span>
+                                                </button>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div style={{ backgroundColor: "white", padding: "20px", marginTop: "15px", borderRadius: "10px" }}>
+                                        <h3>Latest Property</h3>
+                                        {
+                                            latest.map((late) => (
+
+                                                <div style={{ display: "flex", gap: "20px", alignItems: "center", marginTop: "20px" }}>
+                                                    <Link to={`/details/${late.id}`}><img src={late.images.building} alt="" style={{ width: "120px", borderRadius: "10px", }} /></Link>
+                                                    <div className="property-details-card__content ">
+                                                        <h6 className="title">
+                                                            <Link to={`/details/${late.id}`} style={{ textDecoration: "none", color: "#ff6600" }}>
+                                                                {late.tittle}
+                                                            </Link>
+                                                        </h6>
+                                                        <div className="location">
+                                                            <FontAwesomeIcon icon={faLocationDot} style={{ marginRight: "10px" }} />
+
+                                                            <span>{late.location}</span>
+                                                        </div>
+                                                        <span className="price">
+                                                            {late.price}
+                                                        </span>
+                                                    </div>
+
+                                                </div>
+                                            ))
+                                        }
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div className='d-sm-none d-md-none d-lg-block d-none '>
+
+                                <div className='card-body' style={{ backgroundColor: "white", padding: "20px", marginTop: "20px", borderRadius: "10px" }}>
+                                    <div>
+                                        <p>Available share:</p>
+                                        <div style={{ height: "10px", backgroundColor: "#FFF0E6" }} className="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                            <div style={{ backgroundColor: "#ff6600", width: product.progressbar, }}></div>
+                                        </div>
+                                        <p style={{ fontSize: "12px" }}>{product.investors}</p>
+                                    </div>
+
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                        <p>Investment Type</p>
+                                        <p>{product.InvestmentType}</p>
+                                    </div><div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                        <p>Down Payment</p>
+                                        <p>{product.DownPayment}</p>
+                                    </div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                        <p>Initial Invest Amount</p>
+                                        <p>{product.InitialInvestAmount}</p>
+                                    </div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                        <p>Total Installments</p>
+                                        <p>{product.TotalInstallments}</p>
+                                    </div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                        <p>Per Installment Amount</p>
+                                        <p>{product.PerInstallmentAmount}</p>
+                                    </div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                        <p>Installment Schedule</p>
+                                        <p>{product.InstallmentSchedule}</p>
+                                    </div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                        <p>Installment Late Fee</p>
+                                        <p>{product.InstallmentLateFee}</p>
+                                    </div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                        <p>Profit Repeat</p>
+                                        <p>{product.ProfitRepeat}</p>
+                                    </div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                        <p>Profit Schedule</p>
+                                        <p>{product.repeatSchedule}</p>
+                                    </div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                        <p>Profit Back</p>
+                                        <p>{product.ProfitBack}</p>
+                                    </div>
+
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                        <p>Capital Back</p>
+                                        <p>{product.CapitalBack ? (<p>Yes</p>) : (<p>No</p>)}</p>
+                                    </div>
+
+                                </div>
+
+                                <div style={{ backgroundColor: "white", padding: "20px", marginTop: "15px", borderRadius: "10px" }}>
+                                    <h3>Property Video</h3>
+
+                                    <div>
+                                        <iframe width="100%" height="300" src={product.video} title="Real Estate Video Tour |  Sony A7siii | Toronto, Ontario" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+
+                                </div>
+
+
+                                <div style={{ backgroundColor: "white", padding: "20px", marginTop: "20px", borderRadius: "10px" }}>
+
+                                    <div>
+                                        <div style={{ paddingBottom: "10px" }}>
+                                            <h3>Real Estate Investor</h3>
+                                        </div>
+
+                                        <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+                                            <div className="carousel-inner">
+                                                <div className="carousel-item active">
+                                                    <Investorscard image={investors[0].image} location={investors[0].location} yearjoined={investors[0].year} propertyowned={investors[0].properties} investor={investors[0].name} />
+                                                </div>
+                                                <div className="carousel-item">
+                                                    <Investorscard image={investors[1].image} location={investors[1].location} yearjoined={investors[1].year} propertyowned={investors[1].properties} investor={investors[1].name} />
+
+                                                </div>
+                                                <div className="carousel-item">
+                                                    <Investorscard image={investors[2].image} location={investors[2].location} yearjoined={investors[2].year} propertyowned={investors[2].properties} investor={investors[2].name} />
+
+                                                </div>
+                                                <div className="carousel-item">
+                                                    <Investorscard image={investors[3].image} location={investors[3].location} yearjoined={investors[3].year} propertyowned={investors[3].properties} investor={investors[3].name} />
+                                                </div>
+                                                <div className="carousel-item">
+                                                    <Investorscard image={investors[4].image} location={investors[4].location} yearjoined={investors[4].year} propertyowned={investors[4].properties} investor={investors[4].name} />
+                                                </div>
                                             </div>
 
+                                            <button style={{ color: "#ff6600" }} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                                <span aria-hidden="true"> <FontAwesomeIcon icon={faAngleLeft} /></span>
+                                                <span className="visually-hidden">Previous</span>
+                                            </button>
+                                            <button style={{ color: "#ff6600" }} className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                                <span aria-hidden="true" ><FontAwesomeIcon icon={faAngleRight} /></span>
+                                                <span className="visually-hidden">Next</span>
+                                            </button>
+
                                         </div>
-                                    ))
-                                }
+                                    </div>
+
+                                </div>
+
+                                <div style={{ backgroundColor: "white", padding: "20px", marginTop: "15px", borderRadius: "10px" }}>
+                                    <h3>Latest Property</h3>
+                                    {
+                                        latest.map((late) => (
+
+                                            <div style={{ display: "flex", gap: "20px", alignItems: "center", marginTop: "20px" }}>
+                                                <Link to={`/details/${late.id}`}><img src={late.images.building} alt="" style={{ width: "120px", borderRadius: "10px", }} /></Link>
+                                                <div className="property-details-card__content ">
+                                                    <h6 className="title">
+                                                        <Link to={`/details/${late.id}`} style={{ textDecoration: "none", color: "#ff6600" }}>
+                                                            {late.tittle}
+                                                        </Link>
+                                                    </h6>
+                                                    <div className="location">
+                                                        <FontAwesomeIcon icon={faLocationDot} style={{ marginRight: "10px" }} />
+
+                                                        <span>{late.location}</span>
+                                                    </div>
+                                                    <span className="price">
+                                                        {late.price}
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        ))
+                                    }
+
+                                </div>
+
 
                             </div>
 

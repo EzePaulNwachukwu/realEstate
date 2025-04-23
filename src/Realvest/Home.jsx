@@ -37,7 +37,8 @@ function Home() {
 
   return (
     <div className='shadow' style={{
-      backgroundColor: "#F5F5F5"
+      backgroundColor: "#F5F5F5",
+      paddingTop:"100px"
     }}>
       <div className="banner  row ">
         <div className='col-lg-7 col-sm-10'>
@@ -97,7 +98,9 @@ function Home() {
             }}  >Why Invest in Real Estate?</h1>
           </div>
 
-          <div className='row w-100' >
+          <div className='row w-100' style={{
+            justifyContent:"center"
+          }} >
             <WhyusCard icon={faHandHoldingDollar} tittle={"Secure Investment"} descrption={"Rest assured with our secure investment solutions, your financial future is protected"} />
             <WhyusCard icon={faGaugeHigh} tittle={"Transparent Platform"} descrption={"Experience the confidence of a transparent platform for your peace of mind"} ></WhyusCard>
             <WhyusCard icon={faCloudMeatball} tittle={"Passive Income"} descrption={"Explore opportunities for generating passive income streams"} />
@@ -125,7 +128,10 @@ function Home() {
           <Link className='col-lg-4 col-sm-10' to={"/properties"} style={{ textDecoration: "none", color: "#ff6600", fontSize: "26px" }}>Explore <span><FontAwesomeIcon icon={faArrowRight} /></span> </Link>
         </div>
 
-        <div className='row'>
+        <div className='row constiner-xxl' style={{
+          justifyContent: "center",
+
+        }}>
           {
             myproduct.map((sam) => (
 
@@ -140,7 +146,8 @@ function Home() {
       </div>
 
       <AboutCard />
-      <div className='d-lg-flex d-none'>
+
+      <div className='d-lg-flex d-none d-md-flex my-5'>
         <Citycarosel />
       </div>
 
@@ -185,22 +192,20 @@ function Home() {
         }} className='row  '>
           <div style={{
             // width: "30%",
-          }} className='col-lg-4 col-sm-10'>
+          }} className='col-lg-4 col-md-5 col-sm-10'>
             <p style={{
               color: "#FF6600",
               backgroundColor: "#FFF0E6",
-              width: "50%",
               fontSize: "18px",
               padding: "8px"
-            }}>Investors trust us</p>
+            }} className='w-55'>Investors trust us</p>
             <h1>Trusted by Over 3000+ Investors</h1>
-
 
           </div>
 
           <div style={{
             //  width: "50%", padding: "20px" 
-          }} className='col-lg-6 col-sm-10 mt-2'>
+          }} className='col-lg-6 col-md-6 col-sm-10 mt-2'>
             <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
               <div className="carousel-inner">
                 <div className="carousel-item active">
@@ -227,7 +232,7 @@ function Home() {
 
 
         </div>
-        <div className=' d-lg-flex d-none'>
+        <div className=' d-lg-flex d-none d-md-flex'>
           <Brandscarose />
         </div>
 
@@ -254,9 +259,9 @@ function Home() {
 
         <div style={{
           paddingTop: "50px",
-          justifyContent: "space-between",
-          paddingBottom: "100px"
-        }} className='row'>
+          justifyContent: "center",
+          paddingBottom: "100px",
+        }} className='row container-xxl'>
           {
             posts.map((post) => (
 

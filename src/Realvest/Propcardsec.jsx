@@ -11,12 +11,12 @@ function Propcardsec({ image, goto, title, located, investors, price, profit, ba
                 border: "none", justifyContent: "space-between", paddingBottom: "50px"
             }} className='row my-2'>
 
-                <Link to={goto}  className='col-lg-6 col-sm-12 imagecover' >
+                <Link to={goto}  className='col-lg-6 col-sm-12 col-md-5 imagecover' >
                     <img
                       src={image} class="Property image  propimage" alt="..." />
                 </Link>
 
-                <div class="card-body col-lg-6 col-sm-10" style={{
+                <div class="card-body col-lg-6 col-md-5 col-sm-10" style={{
                     // padding: "15px", paddingBottom: "50px", backgroundColor: "#FFFFFF", borderTopRightRadius: "20px", borderBottomRightRadius: "20px"
                 }}>
                     <div style={{ paddingTop: "10px", paddingBottom: "15px" }}>

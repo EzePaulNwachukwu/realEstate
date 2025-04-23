@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Button from './Button'
 import { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHamburger } from '@fortawesome/free-solid-svg-icons/faHamburger';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 function Header() {
@@ -27,66 +30,67 @@ function Header() {
     }, [lastScrollY]);
     return (
 
-        <div style={{}}>
-            <header className={`header ${show ? "show" : "hide"}`} >
-                <nav className="navbar   ">
-                    <div className="container-fluid ">
-                        <div style={{ display: "flex", gap: "150px" }}>
+        <div className='w-100'>
 
-                            <Link to={"/home"}>
-                                <img style={{
-                                    width: "150px",
-                                }} src="https://script.viserlab.com/realvest/assets/images/logo_icon/logo.png" alt="" /></Link>
+            <header className={`header ${show ? "show" : "hide"} row  `} >
 
-
-                            <div className='headerleft'>
-                                <nav style={{
-                                    display: "flex",
-                                    gap: "50px",
-                                    alignItems: "center"
-                                }}>
-                                    <Link to={"/home"}>Home</Link>
-                                    <Link to={"/about"}>About</Link>
-                                    <Link to={"/Properties"}>Properties</Link>
-                                    <Link to={"/blogs"}>Blogs</Link>
-                                    <Link to={"/contact"}> Contact</Link>
-                                </nav>
-                                <div className="dropdown">
-                                    <Link className="btn  dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="https://script.viserlab.com/realvest/assets/images/language/65f7c1a85f8f11710735784.png" alt="" />  English
-                                    </Link>
-
-                                    <ul className="dropdown-menu w-25">
-                                        <li><Link className='dropdown-item'><img src="https://script.viserlab.com/realvest/assets/images/language/65f7c142e9bbc1710735682.png" alt="" />  Bangla</Link> </li>
-                                        <li><Link className="dropdown-item"><img src="https://script.viserlab.com/realvest/assets/images/language/65f7c1ded01571710735838.png" alt="" />  splanish</Link></li>
-                                        <li><Link className="dropdown-item"> <img src="https://script.viserlab.com/realvest/assets/images/language/66544cb2c45ab1716800690.png" alt="" />  Hindi</Link></li>
-                                    </ul>
-                                </div>
-
-                                <Button To={"/login"} text={"Login"} />
-
-                            </div>
-                            <button className="navbar-toggler d-lg-none d-sm-flex " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon">  </span>
-                            </button>
-                        </div>
+                <Link to={"/home"} className='col-lg-4  col-md-10 col-sm-11 w-25'>
+                    <img style={{
+                        width: "150px",
+                    }} src="https://script.viserlab.com/realvest/assets/images/logo_icon/logo.png" alt="" />
+                </Link>
 
 
-                    </div>
+                <nav className=' col-lg- d-lg-flex  col-sm-0  col-md-0 d-sm-none d-none w-25' style={{
+                    display: "flex",
+                    gap: "30px",
+                    alignItems: "center"
+                }}>
+                    <Link to={"/home"}>Home</Link>
+                    <Link to={"/about"}>About</Link>
+                    <Link to={"/Properties"}>Properties</Link>
+                    <Link to={"/blogs"}>Blogs</Link>
+                    <Link to={"/contact"}> Contact</Link>
                 </nav>
+
+                <div className='languageleft col-lg-2  d-sm-none d-lg-flex d-md-none d-none w-25 '>
+                    <div className="dropdown col-lg-6">
+                        <Link className="btn  dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://script.viserlab.com/realvest/assets/images/language/65f7c1a85f8f11710735784.png" alt="" />  English
+                        </Link>
+
+                        <ul className="dropdown-menu w-25">
+                            <li><Link className='dropdown-item'><img src="https://script.viserlab.com/realvest/assets/images/language/65f7c142e9bbc1710735682.png" alt="" />  Bangla</Link> </li>
+                            <li><Link className="dropdown-item"><img src="https://script.viserlab.com/realvest/assets/images/language/65f7c1ded01571710735838.png" alt="" />  splanish</Link></li>
+                            <li><Link className="dropdown-item"> <img src="https://script.viserlab.com/realvest/assets/images/language/66544cb2c45ab1716800690.png" alt="" />  Hindi</Link></li>
+                        </ul>
+                    </div>
+                    <Button To={"/login"} text={"Login"} />
+                </div>
+
+
+                <button class="navbar-toggler  d-lg-none col-sm-1 w-25 "  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+
+                    <span style={{ fontSize: "40px", marginLeft: "10px" }}> <FontAwesomeIcon icon={faBars} /></span>
+
+                </button>
+
+
             </header>
 
-            <div className="offcanvas offcanvas-end h-70" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div className="offcanvas-header">
+
+
+            <div class="offcanvas offcanvas-top " style={{height:"430px"}} tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
                     <Link to={"/home"}>
                         <img style={{
-                            width: "150px",
+                            width: "200px",
                         }} src="https://script.viserlab.com/realvest/assets/images/logo_icon/logo.png" alt="" /></Link>
-                    <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div className="offcanvas-body">
 
-                    <div className="row mt-3 " >
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <div className="row mt-3 " >
                         <div className="dropdown col-8">
                             <Link className="btn  dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="https://script.viserlab.com/realvest/assets/images/language/65f7c1a85f8f11710735784.png" alt="" />  English
@@ -124,13 +128,14 @@ function Header() {
                         </li>
 
                     </ul>
-
                 </div>
             </div>
+
+
+          
         </div>
     )
 }
 
-// Header.propTypes = {}
 
 export default Header

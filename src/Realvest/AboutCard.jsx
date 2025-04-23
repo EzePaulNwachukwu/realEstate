@@ -8,7 +8,7 @@ function AboutCard() {
             <div className='About row  container-xl m-auto ' style={{ 
                 justifyContent: "space-between",
             }}>
-                <div className='col-lg-5 col-sm-12  ' style={{
+                <div className='col-lg-5 col-sm-12 col-md-5 ' style={{
                     marginTop: "50px"
                 }}>
                     <p style={{
@@ -35,7 +35,7 @@ function AboutCard() {
                     <Button To={"/about"} text={"Discover More"} />
 
                 </div>
-                <div className=" col-lg-6 col-sm-12 " style={{
+                <div className=" col-lg-6 col-sm-12 col-md-6 " style={{
                     // width: "50%",
 
                 }}>

@@ -3,7 +3,7 @@ import React from 'react'
 
 function WhyusCard({ icon, tittle, descrption }) {
     return (
-        <div className='col-lg-3 col-sm-8'>
+        <div className='col-lg-3 col-md-4 col-sm-8'>
             <div>
                 <FontAwesomeIcon icon={icon} style={{fontSize: "100px",
                     color: "#FF6600",

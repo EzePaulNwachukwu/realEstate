@@ -26,18 +26,13 @@ function Brandscarose({  autoPlaySpeed = 3000 }) {
     const [index, setIndex] = useState(0);
     const imagesPerSlide = 5;
 
-      // Next slide function
-    //   const nextSlide = () => {
-    //     setIndex((prevIndex) => (prevIndex + 1) % myImages.length);
-    // };
-
-    // Auto-slide every `autoPlaySpeed` ms
+   
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex((prevIndex) => (prevIndex + 1) % myImages.length)
         }, autoPlaySpeed);
 
-        return () => clearInterval(interval); // Cleanup on unmount
+        return () => clearInterval(interval); 
     }, [index, autoPlaySpeed]);
 
   
@@ -46,7 +41,7 @@ function Brandscarose({  autoPlaySpeed = 3000 }) {
         <div className="container mt-4 text-center" style={{paddingTop:"30px",paddingBottom:"100px"}}>
             <div className="row justify-content-center">
                 {Array.from({ length: imagesPerSlide }).map((_, i) => {
-                    const imgIndex = (index + i) % myImages.length; // Loop myImages seamlessly
+                    const imgIndex = (index + i) % myImages.length; 
                     return (
                         <div key={imgIndex} className="col-md-2">
                             <div className="image-container">

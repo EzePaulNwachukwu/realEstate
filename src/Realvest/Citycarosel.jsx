@@ -46,13 +46,13 @@ function Citycarosel() {
                 width: "100%",
                 margin: "auto",
             }}>
-                <p style={{
+                <p className="w-25" style={{
                     color: "#FF6600",
                     backgroundColor: "#FFF0E6",
-                    width: "15%",
+                    // width: "15%",
                     fontSize: "18px",
                     padding: "8px"
-                }}>Latest properties</p>
+                } } >Latest properties</p >
                 <div style={{ display: "flex", justifyContent: "space-between" }} >
                     <h1>Explore By Cities</h1>
                     <div>
@@ -69,7 +69,7 @@ function Citycarosel() {
                             // Ensure seamless looping by wrapping around
                             const imgIndex = (index + i) % myImages.length;
                             return (
-                                <div key={imgIndex} className="col-lg-3 col-sm-7 m-auto h-sm-50">
+                                <div key={imgIndex} className="col-lg-3 col-md-3 col-sm-7 m-auto h-sm-50">
                                     <div className="image-container " >
                                         <img src={myImages[imgIndex].src} className="img-fluid rounded image" alt={myImages[imgIndex].title} />
                                         <div className="overlay">
