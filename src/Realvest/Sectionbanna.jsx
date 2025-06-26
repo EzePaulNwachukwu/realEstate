@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Sectionbanna({section}) {
+function Sectionbanna({ section }) {
   return (
     <div>
-         <div className='Aboutbanna' >
+      <div className='Aboutbanna' >
         <h1 style={{
           paddingLeft: "60px",
           paddingTop: "50px",

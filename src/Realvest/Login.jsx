@@ -27,7 +27,7 @@ function Login() {
   })
 
   return (
-    <div style={{ backgroundColor: "#F5F5F5", paddingTop: "50px", paddingBottom: "100px" }}>
+    <div style={{ backgroundColor: "#F5F5F5", paddingTop: "100px", paddingBottom: "100px" }}>
       <div className='formcontainer'>
         <div className='formheader'>
           <img className='formhimag' style={{ width: "250px" }} src="https://script.viserlab.com/realvest/assets/images/logo_icon/logo.png" alt="logo" />

@@ -25,16 +25,18 @@ function Fullblogs() {
 
     return (
 
-        <div style={{ backgroundColor: "#F5F5F5" }}>
+        <div style={{ backgroundColor: "#F5F5F5", paddingTop: "80px" }}>
 
             <Sectionbanna section={post.title} />
 
             {
                 loading ?
-                    (<div className='container row' style={{
-                          justifyContent: "space-between", paddingTop: "100px", paddingBottom: "100px" }}>
-                        <div className='left col-lg-8 col-md-12 col-sm-11' style={{
-                              backgroundColor: "white", padding: "20px", marginTop: "15px", borderRadius: "10px", marginBottom: "20px" }} >
+                    (<div className='col-10 m-auto row ' style={{
+                        justifyContent: "space-between", paddingTop: "50px", paddingBottom: "100px"
+                    }}>
+                        <div className='left col-lg-7 col-md-12 col-sm-11' style={{
+                            backgroundColor: "white", padding: "20px", marginTop: "15px", borderRadius: "10px", marginBottom: "20px"
+                        }} >
                             <div>
                                 <img src={post.images} alt="post" style={{ width: "100%", borderRadius: "15px", marginBottom: "50px" }} />
                             </div>
@@ -51,7 +53,8 @@ function Fullblogs() {
 
                         <div className='right col-lg-4 col-md-12 col-sm-11' style={{
                             //  width: "35%",
-                              height: "750px", backgroundColor: "white", padding: "30px", marginTop: "15px", borderRadius: "10px", marginBottom: "20px" }}>
+                            height: "750px", backgroundColor: "white", padding: "30px", marginTop: "15px", borderRadius: "10px", marginBottom: "20px"
+                        }}>
                             <h3>Latest Posts</h3>
                             {
                                 latest.map((item, index) => (
@@ -65,6 +68,7 @@ function Fullblogs() {
                                 ))
                             }
                         </div>
+                        
 
 
                     </div>) : (<div class="d-flex justify-content-center">

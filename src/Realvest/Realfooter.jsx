@@ -9,8 +9,7 @@ function Realfooter() {
     <div className='footermain' style={{
       backgroundColor: "#002C45",
       color: "#ffff",
-      // paddingTop: "50px",
-      // paddingBottom: "20px",
+      paddingBottom: "20px",
     }}>
 
       <div className='container'>
@@ -62,7 +61,8 @@ function Realfooter() {
               }} className='col-lg-4 col-sm-11 my-sm-3'>
             <h4>Subscribe for updates</h4>
             <p>Stay on top of the latest blog posts, news and announcements</p>
-            <input type="email" placeholder="Enter Address" style={{ width: "100%", border: "none", backgroundColor: "#002C45", marginBottom: "50px", paddingBottom: "10px", borderBottom: "1px solid #9eb0ba" }} />
+          
+            <input type="email" placeholder="Enter Address" style={{ width: "100%", border: "none", backgroundColor: "#002C45", marginBottom: "50px", paddingBottom: "10px", borderBottom: "1px solid #9eb0ba",outline:"none", color:"white" }} />
 
             <Button text={"Subscribe"} />
 

@@ -41,15 +41,13 @@ function Citycarosel() {
 
     return (
 
-        <div className="container mt-4 text-center citycarosel">
+        <div className="container  text-center citycarosel">
             <div style={{
                 width: "100%",
                 margin: "auto",
             }}>
                 <p className="w-25" style={{
                     color: "#FF6600",
-                    backgroundColor: "#FFF0E6",
-                    // width: "15%",
                     fontSize: "18px",
                     padding: "8px"
                 } } >Latest properties</p >

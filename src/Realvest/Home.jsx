@@ -36,11 +36,11 @@ function Home() {
   }, []);
 
   return (
-    <div className='shadow' style={{
+    <div className='shadow container my-5' style={{
       backgroundColor: "#F5F5F5",
-      paddingTop:"100px"
+      paddingTop: "80px"
     }}>
-      <div className="banner  row ">
+      <div className=" row " style={{ marginBottom: "100px" }}>
         <div className='col-lg-7 col-sm-10'>
           <p className='sub-p' style={{
             color: "#FF6600",
@@ -78,65 +78,74 @@ function Home() {
       </div>
 
 
-      <div style={{ backgroundColor: "#ffff" }}>
-        <div style={{
-          width: "90%",
-          margin: "auto",
-          textAlign: "center",
-          paddingTop: "50px ",
-          paddingBottom: "50px"
-        }} >
-          <div>
-            <p className='  w-sm-50 m-auto p-1 ' style={{
-              color: "#FF6600",
-              backgroundColor: "#FFF0E6",
-
-            }}>Built to help smart investors invest smarter</p>
-            <h1 style={{
-              paddingTop: "10px",
-              paddingBottom: "30px",
-            }}  >Why Invest in Real Estate?</h1>
-          </div>
-
-          <div className='row w-100' style={{
-            justifyContent:"center"
-          }} >
-            <WhyusCard icon={faHandHoldingDollar} tittle={"Secure Investment"} descrption={"Rest assured with our secure investment solutions, your financial future is protected"} />
-            <WhyusCard icon={faGaugeHigh} tittle={"Transparent Platform"} descrption={"Experience the confidence of a transparent platform for your peace of mind"} ></WhyusCard>
-            <WhyusCard icon={faCloudMeatball} tittle={"Passive Income"} descrption={"Explore opportunities for generating passive income streams"} />
-            <WhyusCard icon={faHeadset} tittle={"Support"} descrption={"Count on our dedicated support team for prompt and reliable assistance"} />
-
-          </div>
+      <div className=' text-center' style={{ marginBottom: "100px" }}>
+        <div>
+          <p className='  w-sm-50 m-auto p-1 ' style={{
+            color: "#FF6600",
+          }}>Built to help smart investors invest smarter</p>
+          <h1 style={{
+            paddingTop: "10px",
+            paddingBottom: "30px",
+          }}  >Why Invest in Real Estate?</h1>
         </div>
 
+        <div className='row my-2' style={{
+          justifyContent: "space-between"
+        }} >
+          <WhyusCard icon={faHandHoldingDollar} tittle={"Secure Investment"} descrption={"Rest assured with our secure investment solutions, your financial future is protected"} />
+          <WhyusCard icon={faGaugeHigh} tittle={"Transparent Platform"} descrption={"Experience the confidence of a transparent platform for your peace of mind"} ></WhyusCard>
+          <WhyusCard icon={faCloudMeatball} tittle={"Passive Income"} descrption={"Explore opportunities for generating passive income streams"} />
+          <WhyusCard icon={faHeadset} tittle={"Support"} descrption={"Count on our dedicated support team for prompt and reliable assistance"} />
+
+        </div>
       </div>
 
-      <div style={{
-        width: "90%",
-        margin: "auto",
-        paddingTop: "100px ",
-      }}>
+
+
+      <div style={{ marginBottom: "10px" }}>
         <p style={{
           color: "#FF6600",
-          backgroundColor: "#FFF0E6",
-          width: "15%",
           fontSize: "18px",
           padding: "8px"
         }} className='w-50'>Latest properties</p>
-        <div style={{  justifyContent: "space-between" }} className='row mb-3' >
-          <h1 className='col-lg-8 col-sm-10'>Explore Latest Properties</h1>
-          <Link className='col-lg-4 col-sm-10' to={"/properties"} style={{ textDecoration: "none", color: "#ff6600", fontSize: "26px" }}>Explore <span><FontAwesomeIcon icon={faArrowRight} /></span> </Link>
+        <div style={{ justifyContent: "space-between" }} className='row mb-3' >
+          <h1 className='col-lg-10 col-sm-10'>Explore Latest Properties</h1>
+          <Link className='col-lg-2 col-sm-10' to={"/properties"} style={{ textDecoration: "none", color: "#ff6600", fontSize: "26px" }}>Explore <span><FontAwesomeIcon icon={faArrowRight} /></span> </Link>
         </div>
 
-        <div className='row constiner-xxl' style={{
-          justifyContent: "center",
 
-        }}>
+
+        <div className="row justify-content-between my-5">
           {
-            myproduct.map((sam) => (
+            myproduct.map((product) => (
 
 
-              <Propcard image={sam.images.building} goto={`/details/${sam.id}`} title={sam.tittle} price={sam.price} bar={<>{<><div style={{ height: "10px", backgroundColor: "#FFF0E6" }} className='progress' role='progressbar' aria-label='Basic example' aria-valuenow='40' aria-valuemin='0' aria-valuemax='40'><div className='progress-bar' style={{ width: sam.progressbar, color: " #ff6600", backgroundColor: " #ff6600", height: "10px" }}></div></div></>}</>} located={sam.location} investors={sam.investors} profit={sam.profit} sschedule={sam.repeatSchedule} capitalback={sam.CapitalBack ? (<b>Yes</b>) : (<b>No</b>)} />
+              // <Propcard image={sam.images.building} goto={`/details/${sam.id}`} title={sam.tittle} price={sam.price} bar={<>{<><div style={{ height: "10px", backgroundColor: "#FFF0E6" }} className='progress' role='progressbar' aria-label='Basic example' aria-valuenow='40' aria-valuemin='0' aria-valuemax='40'><div className='progress-bar' style={{ width: sam.progressbar, color: " #ff6600", backgroundColor: " #ff6600", height: "10px" }}></div></div></>}</>} located={sam.location} investors={sam.investors} profit={sam.profit} sschedule={sam.repeatSchedule} capitalback={sam.CapitalBack ? (<b>Yes</b>) : (<b>No</b>)} />
+
+              <div key={product.id} className="col-lg-4  col-md-6  ">
+                <Propcard
+                  image={product.images.building}
+                  title={product.tittle}
+                  price={product.price}
+                  goto={`/details/${product.id}`}
+                  located={product.location}
+                  investors={product.investors}
+                  profit={product.profit}
+                  sschedule={product.repeatSchedule}
+                  capitalback={product.CapitalBack ? <b>Yes</b> : <b>No</b>}
+                  bar={
+                    <div className="progress" style={{ height: "10px", backgroundColor: "#FFF0E6" }}>
+                      <div
+                        className="progress-bar"
+                        style={{
+                          width: product.progressbar,
+                          backgroundColor: "#ff6600",
+                        }}
+                      ></div>
+                    </div>
+                  }
+                />
+              </div>
 
 
             ))
@@ -153,23 +162,17 @@ function Home() {
 
 
 
-      <div style={{
-        width: "90%",
-        margin: "auto",
-        paddingTop: "100px ",
-      }}>
+      <div className='container-fluid mt-5'>
         <p style={{
           color: "#FF6600",
-          backgroundColor: "#FFF0E6",
           fontSize: "18px",
-          padding: "8px"
-        }} className='w-50'>Featured properties</p>
+        }}>Featured properties</p>
         <div style={{ justifyContent: "space-between" }} className="row" >
           <h1 className='col-lg-10 col-sm-10'>All Properties Spotlight</h1>
           <Link className='col-lg-2 col-sm-6' to={"/properties"} style={{ textDecoration: "none", color: "#ff6600", fontSize: "26px" }}>Explore <span><FontAwesomeIcon icon={faArrowRight} /></span> </Link>
         </div>
 
-        <div style={{ paddingTop: "50px" }}>
+        <div style={{ paddingTop: "10px" }}>
           {
             myproduct.map((Featured) => (
 
@@ -186,7 +189,7 @@ function Home() {
         <div style={{
           width: "90%",
           margin: "auto",
-          paddingTop: "100px ",
+          paddingTop: "20px ",
           justifyContent: "space-between",
           borderBottom: "1px solid black"
         }} className='row  '>
@@ -195,7 +198,6 @@ function Home() {
           }} className='col-lg-4 col-md-5 col-sm-10'>
             <p style={{
               color: "#FF6600",
-              backgroundColor: "#FFF0E6",
               fontSize: "18px",
               padding: "8px"
             }} className='w-55'>Investors trust us</p>
@@ -240,32 +242,27 @@ function Home() {
       </div>
 
       <div style={{
-        width: "90%",
-        margin: "auto",
         paddingTop: "100px ",
       }}>
 
         <p style={{
           color: "#FF6600",
-          backgroundColor: "#FFF0E6",
-          // width: "10%",
           fontSize: "18px",
           padding: "8px"
         }} className='w-50'>Our blogs</p>
-        <div  className="row" style={{  justifyContent: "space-between" }} >
-          <h1 className='col-lg-8 col-sm-10'>Latest News & Articles</h1>
-          <Link className='col-lg-4 col-sm-7' to={"/blogs"} style={{ textDecoration: "none", color: "#ff6600", fontSize: "26px" }}>Explore <span><FontAwesomeIcon icon={faArrowRight} /></span> </Link>
+        <div className="row" style={{ justifyContent: "space-between" }} >
+          <h1 className='col-lg-10 col-sm-10'>Latest News & Articles</h1>
+          <Link className='col-lg-2 col-sm-10' to={"/blogs"} style={{ textDecoration: "none", color: "#ff6600", fontSize: "26px" }}>Explore <span><FontAwesomeIcon icon={faArrowRight} /></span> </Link>
         </div>
 
         <div style={{
-          paddingTop: "50px",
           justifyContent: "center",
-          paddingBottom: "100px",
-        }} className='row container-xxl'>
+        }} className='row justify-content-between my-5'>
           {
             posts.map((post) => (
-
+              <div className='col-lg-4  col-md-6 '>
               <Blogscard image={post.images} title={post.title} p1={post.p1.p} day={post.date.day} month={post.date.month} goto={`/blogpost/${post.id}`} />
+              </div>
             ))
           }
 

@@ -4,7 +4,7 @@ import Sectionbanna from './Sectionbanna'
 
 export default function About() {
   return (
-    <div style={{backgroundColor:"#F5F5F5"}}>
+    <div style={{backgroundColor:"#F5F5F5", paddingTop:"80px"}}>
       <Sectionbanna section={"About"} />
 
       <AboutCard />
@@ -14,6 +14,7 @@ export default function About() {
           width: "90%",
           margin: "auto",
           paddingBottom: "100px",
+          marginTop: "50px"
           
         }}>
           <div>
@@ -22,8 +23,8 @@ export default function About() {
 
           <div className="accordion accordion-flush converncollaps" id="accordionFlushExample">
             <div className="accordion-item">
-              <h2 className="accordion-header">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <h2 className="accordion-header"> 
+                <button className="accordion-button collapsed p-3" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                   <b>What is real estate investment?</b>
                 </button>
@@ -39,7 +40,7 @@ export default function About() {
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                <button className="accordion-button collapsed p-3" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                   <b>
                   What types of real estate investments are available?</b>
@@ -58,7 +59,7 @@ export default function About() {
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                <button className="accordion-button collapsed p-3" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseThree" aria-expanded="false"
                   aria-controls="flush-collapseThree">
                   <b>How do I get started with real estate investment?</b>
@@ -77,7 +78,7 @@ export default function About() {
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                <button className="accordion-button collapsed p-3" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseFour" aria-expanded="false"
                   aria-controls="flush-collapseFour">
                   <b>How much money do I need to invest in real estate?</b>
@@ -96,7 +97,7 @@ export default function About() {
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                <button className="accordion-button collapsed p-3" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseFive" aria-expanded="false"
                   aria-controls="flush-collapseFive">
                   <b>How can i maximize returns in real estate investments?</b>

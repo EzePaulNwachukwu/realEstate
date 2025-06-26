@@ -19,18 +19,23 @@ function Blogs() {
 
   console.log(posts)
   return (
-    <div >
+    <div style={{paddingTop:"80px"}} >
 
       <Sectionbanna section={"Blogs"} />
-      <div  className=" row blogpage "  >
+      <div className='container'>
+         <div  className=" row  container-fluid  my-5 ">
 
         {
           posts.map((post) => (
+             <div className='col-lg-4 col-md-6'>
             <Blogscard image={post.images} title={post.title} goto={`/blogpost/${post.id}`}  p1={post.p1.p} day={post.date.day} month={post.date.month}/>
+           </div>
           ))
         }
 
+      </div>  
       </div>
+   
 
     </div>
   )

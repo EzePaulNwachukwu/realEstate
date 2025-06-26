@@ -44,185 +44,230 @@ function Properties() {
   // console.log(products)
 
   return (
-    <div style={{ backgroundColor: "#F5F5F5" }}>
+    <div style={{ backgroundColor: "#F5F5F5", paddingTop: "80px " }}>
       <Sectionbanna section={"Properties"} />
+      {/* Filter Button (Mobile Only) */}
+      <div className="d-lg-none d-flex justify-content-end px-3 pt-2">
+        <button
+          className="btn filter"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+        >
+          <FontAwesomeIcon icon={faFilter} />
+        </button>
+      </div>
 
-
-      <button style={{width:"50px", position:"relative",left:"325px",top:"20px"}}  className="btn filter d-lg-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><FontAwesomeIcon icon={faFilter}></FontAwesomeIcon></button>
-
-      <div className="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      {/* Offcanvas Filter (for small screens) */}
+      <div
+        className="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
+        tabIndex="-1"
+        id="offcanvasScrolling"
+        aria-labelledby="offcanvasScrollingLabel"
+      >
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="offcanvasScrollingLabel">Search Property</h5>
           <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div className="offcanvas-body">
-          <div >
-            <aside id="property-page-sidebar" className="property-page-sidebar " style={{ width: "100%" }}>
-
-              <Formik>
-                <Form className="filter-form" onSubmit={formiks.handleSubmit}>
-                  <div className="filter-form__block">
-                    <div className="form-group">
-                      <Field className="lookingfor" type="text" name="tittle" placeholder="What are you looking for?" {...formiks.getFieldProps("tittle")} />
-                      <small>{formiks.touched.tittle && formiks.errors.tittle ? <small>{formiks.errors.tittle}</small> : null}</small>
-                    </div>
-                    <div className="form-group">
-                      <Field as="select" name="location" className='select '  {...formiks.getFieldProps("location")}>
-                        <option value="">Select Location</option>
-                        <option value="1">
-                          New York, USA</option>
-                        <option value="2">
-                          London, England</option>
-                        <option value="3">
-                          Paris, France</option>
-                        <option value="4">
-                          Berlin, Germany</option>
-                        <option value="5">
-                          Tokyo, Japan</option>
-                        <option value="6">
-                          San Francisco, USA</option>
-                      </Field>
-                      <small>{formiks.touched.location && formiks.errors.location ? <small>{formiks.errors.location}</small> : null}</small>
-                    </div>
-                    <div className="form-group">
-                      <Field as="select" name="InvestmentType" data-minimum-results-for-search="-1" className='select' {...formiks.getFieldProps("InvestmentType")}>
-                        <option value="">Investment Type</option>
-                        <option value="1">
-                          Onetime  </option>
-                        <option value="2">
-                          Installment </option>
-                      </Field>
-                      <small>{formiks.touched.InvestmentType && formiks.errors.InvestmentType ? <small>{formiks.errors.InvestmentType}</small> : null}</small>
-                    </div>
-                    <div className="form-group">
-                      <Field as="select" name="repeatSchedule" data-minimum-results-for-search="-1" className='select' {...formiks.getFieldProps("repeatSchedule")}>
-                        <option value="">Profit Schedule</option>
-                        <option value="3">
-                          One Time </option>
-                        <option value="1">
-                          Lifetime </option>
-                        <option value="2">
-                          Repeated Time </option>
-                      </Field>
-                      <small>{formiks.touched.repeatSchedule && formiks.errors.repeatSchedule ? <small>{formiks.errors.repeatSchedule}</small> : null}</small>
-
-                    </div>
-                    <div className="form-group">
-                      <label >Capital Back</label>
-
-                      <div className="radio">
-                        <input name="capitalback" type="radio" value="true" {...formiks.getFieldProps("capitalback")} />
-                        <label > Yes </label>
-                      </div>
-                      <div className="radio">
-                        <input type="radio" value="false" name="capitalback" {...formiks.getFieldProps("capitalback")} />
-                        <label className="form-check-label">No </label>
-                      </div>
-                      <small>{formiks.touched.capitalback && formiks.errors.capitalback ? <small>{formiks.errors.capitalback}</small> : null}</small>
-
-                    </div>
-
-                  </div>
-
-                  <button type="submit" className="filter">
-                    <FontAwesomeIcon icon={faFilter}></FontAwesomeIcon> Filter Now </button>
-                </Form>
-              </Formik>
-            </aside>
-          </div>
-
-        </div>
-      </div>
-
-
-      <div className='row container-xxl my-5'>
-        <div className='col-lg-4 d-lg-flex d-md-none d-sm-none col-sm-10 d-none' style={{ backgroundColor: "white", padding: "20px", height: "600px", marginLeft: "20px" }} >
-          <aside id="property-page-sidebar" className="property-page-sidebar " style={{ width: "100%" }}>
-
+          {/* Filter Form */}
+          <aside className="property-page-sidebar w-100">
             <Formik>
               <Form className="filter-form" onSubmit={formiks.handleSubmit}>
                 <div className="filter-form__block">
-                  <h5 className="title">Search Property</h5>
-                  <div className="form-group">
-                    <Field className="lookingfor" type="text" name="tittle" placeholder="What are you looking for?" {...formiks.getFieldProps("tittle")} />
-                    <small>{formiks.touched.tittle && formiks.errors.tittle ? <small>{formiks.errors.tittle}</small> : null}</small>
+
+                  <div className="form-group mb-3">
+                    <Field className="form-control" type="text" name="tittle" placeholder="What are you looking for?" {...formiks.getFieldProps("tittle")} />
+                    {formiks.touched.tittle && formiks.errors.tittle && (
+                      <small className="text-danger">{formiks.errors.tittle}</small>
+                    )}
                   </div>
-                  <div className="form-group">
-                    <Field as="select" name="location" className='select '  {...formiks.getFieldProps("location")}>
+
+                  <div className="form-group mb-3">
+                    <Field as="select" name="location" className="form-select" {...formiks.getFieldProps("location")}>
                       <option value="">Select Location</option>
-                      <option value="1">
-                        New York, USA</option>
-                      <option value="2">
-                        London, England</option>
-                      <option value="3">
-                        Paris, France</option>
-                      <option value="4">
-                        Berlin, Germany</option>
-                      <option value="5">
-                        Tokyo, Japan</option>
-                      <option value="6">
-                        San Francisco, USA</option>
+                      <option value="1">New York, USA</option>
+                      <option value="2">London, England</option>
+                      <option value="3">Paris, France</option>
+                      <option value="4">Berlin, Germany</option>
+                      <option value="5">Tokyo, Japan</option>
+                      <option value="6">San Francisco, USA</option>
                     </Field>
-                    <small>{formiks.touched.location && formiks.errors.location ? <small>{formiks.errors.location}</small> : null}</small>
+                    {formiks.touched.location && formiks.errors.location && (
+                      <small className="text-danger">{formiks.errors.location}</small>
+                    )}
                   </div>
-                  <div className="form-group">
-                    <Field as="select" name="InvestmentType" data-minimum-results-for-search="-1" className='select' {...formiks.getFieldProps("InvestmentType")}>
+
+                  <div className="form-group mb-3">
+                    <Field as="select" name="InvestmentType" className="form-select" {...formiks.getFieldProps("InvestmentType")}>
                       <option value="">Investment Type</option>
-                      <option value="1">
-                        Onetime  </option>
-                      <option value="2">
-                        Installment </option>
+                      <option value="1">Onetime</option>
+                      <option value="2">Installment</option>
                     </Field>
-                    <small>{formiks.touched.InvestmentType && formiks.errors.InvestmentType ? <small>{formiks.errors.InvestmentType}</small> : null}</small>
+                    {formiks.touched.InvestmentType && formiks.errors.InvestmentType && (
+                      <small className="text-danger">{formiks.errors.InvestmentType}</small>
+                    )}
                   </div>
-                  <div className="form-group">
-                    <Field as="select" name="repeatSchedule" data-minimum-results-for-search="-1" className='select' {...formiks.getFieldProps("repeatSchedule")}>
+
+                  <div className="form-group mb-3">
+                    <Field as="select" name="repeatSchedule" className="form-select" {...formiks.getFieldProps("repeatSchedule")}>
                       <option value="">Profit Schedule</option>
-                      <option value="3">
-                        One Time </option>
-                      <option value="1">
-                        Lifetime </option>
-                      <option value="2">
-                        Repeated Time </option>
+                      <option value="3">One Time</option>
+                      <option value="1">Lifetime</option>
+                      <option value="2">Repeated Time</option>
                     </Field>
-                    <small>{formiks.touched.repeatSchedule && formiks.errors.repeatSchedule ? <small>{formiks.errors.repeatSchedule}</small> : null}</small>
-
-                  </div>
-                  <div className="form-group">
-                    <label >Capital Back</label>
-
-                    <div className="radio">
-                      <input name="capitalback" type="radio" value="true" {...formiks.getFieldProps("capitalback")} />
-                      <label > Yes </label>
-                    </div>
-                    <div className="radio">
-                      <input type="radio" value="false" name="capitalback" {...formiks.getFieldProps("capitalback")} />
-                      <label className="form-check-label">No </label>
-                    </div>
-                    <small>{formiks.touched.capitalback && formiks.errors.capitalback ? <small>{formiks.errors.capitalback}</small> : null}</small>
-
+                    {formiks.touched.repeatSchedule && formiks.errors.repeatSchedule && (
+                      <small className="text-danger">{formiks.errors.repeatSchedule}</small>
+                    )}
                   </div>
 
+                  <div className="form-group mb-4">
+                    <label className="d-block mb-2">Capital Back</label>
+                    <div className="form-check form-check-inline">
+                      <Field className="form-check-input" name="capitalback" type="radio" value="true" />
+                      <label className="form-check-label">Yes</label>
+                    </div>
+                    <div className="form-check form-check-inline">
+                      <Field className="form-check-input" name="capitalback" type="radio" value="false" />
+                      <label className="form-check-label">No</label>
+                    </div>
+                    {formiks.touched.capitalback && formiks.errors.capitalback && (
+                      <div><small className="text-danger">{formiks.errors.capitalback}</small></div>
+                    )}
+                  </div>
+
+                  <button type="submit" className="btn btn-warning w-100">
+                    <FontAwesomeIcon icon={faFilter} /> Filter Now
+                  </button>
                 </div>
-
-                <button type="submit" className="filter">
-                  <FontAwesomeIcon icon={faFilter}></FontAwesomeIcon> Filter Now </button>
               </Form>
             </Formik>
           </aside>
         </div>
+      </div>
 
-        <div className='row col-lg-7 col-md-10 col-sm-10 ' style={{ justifyContent: "space-between", alignItems: "center" }} >
-          {
-            products.map((product, index) => (
-              <div key={product.id} className='col-lg-5 col-md-5 col-sm-10 '>
-                <Propcard image={product.images.building} title={product.tittle} price={product.price} goto={`/details/${product.id}`} bar={<>{<><div style={{ height: "10px", backgroundColor: "#FFF0E6" }} classNameName='progress' role='progressbar' aria-label='Basic example' aria-valuenow='40' aria-valuemin='0' aria-valuemax='40'><div className='progress-bar' style={{ width: product.progressbar, color: " #ff6600", backgroundColor: " #ff6600", height: "10px" }}></div></div></>}</>} located={product.location} investors={product.investors} profit={product.profit} sschedule={product.repeatSchedule} capitalback={product.CapitalBack ? (<b>Yes</b>) : (<b>No</b>)} />
-              </div>
-            ))
-          }
+      {/* Main Content */}
+      <div className="container-fluid my-5">
+        <div className="row justify-content-between">
 
+          {/* Large Screen Sidebar Filter */}
+          <div className="col-lg-4 d-none d-lg-block">
+            <div className="bg-white p-4 shadow-sm" style={{ minHeight: "600px", backgroundColor: "white" }}>
+              <h5 className="mb-4">Search Property</h5>
+              <aside className="property-page-sidebar w-100">
+                <Formik>
+                  <Form className="filter-form" onSubmit={formiks.handleSubmit}>
+
+                    <div className="filter-form__block">
+
+                      <div className="form-group mb-3">
+                        <Field className="form-control" type="text" name="tittle" placeholder="What are you looking for?" {...formiks.getFieldProps("tittle")} />
+                        {formiks.touched.tittle && formiks.errors.tittle && (
+                          <small className="text-danger">{formiks.errors.tittle}</small>
+                        )}
+                      </div>
+
+                      <div className="form-group mb-3">
+                        <Field as="select" name="location" className="form-select" {...formiks.getFieldProps("location")}>
+                          <option value="">Select Location</option>
+                          <option value="1">New York, USA</option>
+                          <option value="2">London, England</option>
+                          <option value="3">Paris, France</option>
+                          <option value="4">Berlin, Germany</option>
+                          <option value="5">Tokyo, Japan</option>
+                          <option value="6">San Francisco, USA</option>
+                        </Field>
+                        {formiks.touched.location && formiks.errors.location && (
+                          <small className="text-danger">{formiks.errors.location}</small>
+                        )}
+                      </div>
+
+                      <div className="form-group mb-3">
+                        <Field as="select" name="InvestmentType" className="form-select" {...formiks.getFieldProps("InvestmentType")}>
+                          <option value="">Investment Type</option>
+                          <option value="1">Onetime</option>
+                          <option value="2">Installment</option>
+                        </Field>
+                        {formiks.touched.InvestmentType && formiks.errors.InvestmentType && (
+                          <small className="text-danger">{formiks.errors.InvestmentType}</small>
+                        )}
+                      </div>
+
+                      <div className="form-group mb-3">
+                        <Field as="select" name="repeatSchedule" className="form-select" {...formiks.getFieldProps("repeatSchedule")}>
+                          <option value="">Profit Schedule</option>
+                          <option value="3">One Time</option>
+                          <option value="1">Lifetime</option>
+                          <option value="2">Repeated Time</option>
+                        </Field>
+                        {formiks.touched.repeatSchedule && formiks.errors.repeatSchedule && (
+                          <small className="text-danger">{formiks.errors.repeatSchedule}</small>
+                        )}
+                      </div>
+
+                      <div className="form-group mb-4">
+                        <label className="d-block mb-2">Capital Back</label>
+                        <div className="form-check form-check-inline">
+                          <Field className="form-check-input" name="capitalback" type="radio" value="true" />
+                          <label className="form-check-label">Yes</label>
+                        </div>
+                        <div className="form-check form-check-inline">
+                          <Field className="form-check-input" name="capitalback" type="radio" value="false" />
+                          <label className="form-check-label">No</label>
+                        </div>
+                        {formiks.touched.capitalback && formiks.errors.capitalback && (
+                          <div><small className="text-danger">{formiks.errors.capitalback}</small></div>
+                        )}
+                      </div>
+
+                      <button type="submit" className="btn btn-warning w-100">
+                        <FontAwesomeIcon icon={faFilter} /> Filter Now
+                      </button>
+                    </div>
+
+                  </Form>
+                </Formik>
+              </aside>
+            </div>
+          </div>
+
+          {/* Property Cards Section */}
+          <div className="col-lg-8">
+            <div className="row g-4">
+              {products.map((product, index) => (
+                <div key={product.id} className="col-12 col-md-6">
+                  <Propcard
+                    image={product.images.building}
+                    title={product.tittle}
+                    price={product.price}
+                    goto={`/details/${product.id}`}
+                    located={product.location}
+                    investors={product.investors}
+                    profit={product.profit}
+                    sschedule={product.repeatSchedule}
+                    capitalback={product.CapitalBack ? <b>Yes</b> : <b>No</b>}
+                    bar={
+                      <div className="progress" style={{ height: "10px", backgroundColor: "#FFF0E6" }}>
+                        <div
+                          className="progress-bar"
+                          style={{
+                            width: product.progressbar,
+                            backgroundColor: "#ff6600",
+                          }}
+                        ></div>
+                      </div>
+                    }
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   )
 }

@@ -34,8 +34,8 @@ function Contact() {
 
       <div className='container'>
 
-        <div className=' boxwrap row container-xxl ' style={{justifyContent:"center", gap:"20px"}}>
-          <div className='box col-lg-4'>
+        <div className='row container   my-5' style={{justifyContent:"space-between"}}>
+          <div className='box col-lg-4 col-md-6'>
             <span><FontAwesomeIcon icon={faPhoneAlt} /></span>
 
             <div>
@@ -45,7 +45,7 @@ function Contact() {
               </p>
             </div>
           </div>
-          <div className='box col-lg-4 '>
+          <div className='box col-lg-4 col-md-6'>
             <span><FontAwesomeIcon icon={faEnvelope} /></span>
 
             <div>
@@ -55,7 +55,7 @@ function Contact() {
               </p>
             </div>
           </div>
-          <div className='box col-lg-4'>
+          <div className='box col-lg-4 col-md-6'>
             <span><FontAwesomeIcon icon={faLocationDot} /></span>
 
             <div>
@@ -114,9 +114,9 @@ function Contact() {
           <div className="accordion accordion-flush converncollaps" id="accordionFlushExample">
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className=" accordion-button concern collapsed" type="button" data-bs-toggle="collapse"
+                <button className=" accordion-button concern collapsed p-3" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  <b>What is real estate investment?</b>
+                  <b >What is real estate investment?</b>
                 </button>
               </h2>
               <div id="flush-collapseOne" className="accordion-collapse collapse"
@@ -130,7 +130,7 @@ function Contact() {
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                <button className="accordion-button collapsed p-3" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                   <b>
                     What types of real estate investments are available?</b>
@@ -149,7 +149,7 @@ function Contact() {
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                <button className="accordion-button collapsed p-3" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseThree" aria-expanded="false"
                   aria-controls="flush-collapseThree">
                   <b>How do I get started with real estate investment?</b>
@@ -168,7 +168,7 @@ function Contact() {
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                <button className="accordion-button collapsed p-3" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseFour" aria-expanded="false"
                   aria-controls="flush-collapseFour">
                   <b>How much money do I need to invest in real estate?</b>
@@ -187,7 +187,7 @@ function Contact() {
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                <button className="accordion-button collapsed p-3" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseFive" aria-expanded="false"
                   aria-controls="flush-collapseFive">
                   <b>How can i maximize returns in real estate investments?</b>

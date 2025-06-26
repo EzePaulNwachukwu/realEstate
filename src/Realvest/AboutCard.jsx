@@ -5,15 +5,14 @@ function AboutCard() {
     return (
         <div>
 
-            <div className='About row  container-xl m-auto ' style={{ 
-                justifyContent: "space-between",
+            <div className=' row  container-xl m-auto ' style={{
+                justifyContent: "space-between"
             }}>
                 <div className='col-lg-5 col-sm-12 col-md-5 ' style={{
-                    marginTop: "50px"
+                    marginTop: "100px"
                 }}>
                     <p style={{
                         color: "#FF6600",
-                        backgroundColor: "#FFF0E6",
                         padding: "8px",
                     }} className='w-50'>About RealVest</p>
                     <h1 style={{
@@ -35,8 +34,9 @@ function AboutCard() {
                     <Button To={"/about"} text={"Discover More"} />
 
                 </div>
-                <div className=" col-lg-6 col-sm-12 col-md-6 " style={{
+                <div className=" col-lg-5 col-sm-12 col-md-6 " style={{
                     // width: "50%",
+                    height:"750px"
 
                 }}>
                     <div className='shadow flotintabt1'>
@@ -45,7 +45,7 @@ function AboutCard() {
                     </div>
 
 
-                    <img className='abtimage'  src="https://script.viserlab.com/realvest/assets/images/frontend/about/65c46856b5a681707370582.jpg" alt="" />
+                    <img className='abtimage' src="https://script.viserlab.com/realvest/assets/images/frontend/about/65c46856b5a681707370582.jpg" alt="" />
 
                     <div className='flotintabt2' >
                         <div> <h1>3K <span>+</span></h1>
@@ -59,8 +59,6 @@ function AboutCard() {
 
 
             </div>
-
-
 
         </div>
     )

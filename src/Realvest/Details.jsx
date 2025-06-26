@@ -37,7 +37,7 @@ function Details() {
     if (!product) return <h1><Notfoundpage /></h1>;
 
     return (
-        <div style={{ backgroundColor: "#F5F5F5" }}>
+        <div style={{ backgroundColor: "#F5F5F5" , paddingTop:"80px"}}>
             <Sectionbanna section={"Property Details"} />
 
             {
@@ -53,7 +53,6 @@ function Details() {
                                 <p><span style={{ color: "#ff6600", marginRight: "10px" }}><FontAwesomeIcon icon={faLocationDot} /></span>{product.location}</p>
                                 <div id="carouselExampleIndicators" className="carousel slide">
                                     <div className="carousel-indicators">
-
                                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1">  <img src={product.images.building} className="d-block w-100" alt="..." />  </button>
                                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">   <img src={product.images.building} className="d-block w-100" alt="..." /> </button>
                                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">   <img src={product.images.kitchen} className="d-block w-100" alt="..." /> </button>
@@ -84,12 +83,12 @@ function Details() {
 
                                     </div>
 
-                                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                        <span aria-hidden="true" style={{ fontSize: "30px", backgroundColor: "#ff6600", paddingLeft: "10px", paddingRight: "10px", borderRadius: "50%" }}><FontAwesomeIcon icon={faAngleLeft} /></span>
+                                    <button style={{width:"45px", height:"45px", margin:"auto",marginLeft:"20px", textAlign:"center", backgroundColor:"#ff6600",borderRadius:"50%"}} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span aria-hidden="true" style={{ fontSize: "30px" }}><FontAwesomeIcon icon={faAngleLeft} /></span>
                                         <span className="visually-hidden">Previous</span>
                                     </button>
-                                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                        <span aria-hidden="true" style={{ fontSize: "30px", backgroundColor: "#ff6600", paddingLeft: "10px", paddingRight: "10px", borderRadius: "50%" }}> <FontAwesomeIcon icon={faAngleRight} /></span>
+                                    <button style={{width:"45px", height:"45px", margin:"auto",marginRight:"20px", textAlign:"center", backgroundColor:"#ff6600",borderRadius:"50%"}} className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span aria-hidden="true" style={{ fontSize: "30px" }}> <FontAwesomeIcon icon={faAngleRight} /></span>
                                         <span className="visually-hidden">Next</span>
                                     </button>
 
@@ -132,8 +131,8 @@ function Details() {
                                 <p>Per share amount</p>
                             </div>
                             <div className='row'>
-                                <button className='col-lg-12 col-sm-4 col-md-5 w-50' style={{ backgroundColor: "#ff6600", padding: "15px", borderRadius: "10px", border: "none" }}>  <Link style={{ color: "white", textDecoration: "none", fontSize: "18px" }}>Invest Now</Link> </button>
-                                <button className="btn filter w-25  d-sm-flex d-lg-none d-md-flex col-sm-4 col-md-4" style={{ padding: "15px", borderRadius: "10px", fontSize:"20px",textAlign:"center" ,marginLeft:"10px"}} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">More Details</button>
+                                <button className='col-lg-12 col-sm-4 col-md-5  ' style={{ backgroundColor: "#ff6600", padding: "10px", borderRadius: "10px", border: "none",}}>  <Link style={{ color: "white", textDecoration: "none", fontSize: "18px" }}>Invest Now</Link> </button>
+                                <button className="btn filter d-sm-flex d-lg-none d-md-flex col-sm-4 col-md-4 my-3" style={{width:"40%", padding: "10px", borderRadius: "10px", fontSize:"20px",textAlign:"center" ,marginLeft:"10px"}} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">More Details</button>
                             </div>
 
 

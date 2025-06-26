@@ -28,11 +28,20 @@ function Header() {
 
         return () => window.removeEventListener("scroll", handleScroll);
     }, [lastScrollY]);
+
+
+    const closeOffcanvas = () => {
+        const offcanvasEl = document.getElementById('offcanvasTop');
+        const offcanvasInstance = window.bootstrap?.Offcanvas.getInstance(offcanvasEl);
+        if (offcanvasInstance) {
+            offcanvasInstance.hide();
+        }
+    };
     return (
 
         <div className='w-100'>
 
-            <header className={`header ${show ? "show" : "hide"} row  `} >
+            <header className={`header ${show ? "show" : "hide"} row  justify-content-between `} >
 
                 <Link to={"/home"} className='col-lg-4  col-md-10 col-sm-11 w-25'>
                     <img style={{
@@ -69,9 +78,9 @@ function Header() {
                 </div>
 
 
-                <button class="navbar-toggler  d-lg-none col-sm-1 w-25 "  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                <button class="navbar-toggler  d-lg-none col-sm-1 w-25 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
 
-                    <span style={{ fontSize: "40px", marginLeft: "10px" }}> <FontAwesomeIcon icon={faBars} /></span>
+                    <span style={{ fontSize: "40px", }}> <FontAwesomeIcon icon={faBars} /></span>
 
                 </button>
 
@@ -80,9 +89,9 @@ function Header() {
 
 
 
-            <div class="offcanvas offcanvas-top " style={{height:"430px"}} tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas offcanvas-top " style={{ height: "550px" }} tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
                 <div class="offcanvas-header">
-                    <Link to={"/home"}>
+                    <Link to={"/home"} onClick={closeOffcanvas}>
                         <img style={{
                             width: "200px",
                         }} src="https://script.viserlab.com/realvest/assets/images/logo_icon/logo.png" alt="" /></Link>
@@ -90,7 +99,7 @@ function Header() {
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                <div className="row mt-3 " >
+                    <div className="row mt-3 " >
                         <div className="dropdown col-8">
                             <Link className="btn  dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="https://script.viserlab.com/realvest/assets/images/language/65f7c1a85f8f11710735784.png" alt="" />  English
@@ -103,28 +112,28 @@ function Header() {
                             </ul>
                         </div>
                         <div className='col-3'>
-                            <Button To={"/login"} text={"Login"} />
+                            <Button To={"/login"} text={"Login"} onClick={closeOffcanvas} />
                         </div>
                     </div>
                     <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 nav2">
                         <li className="nav-item">
-                            <Link to={"/home"}>Home</Link>
+                            <Link to={"/home"} onClick={closeOffcanvas}>Home</Link>
 
                         </li>
                         <li className="nav-item">
-                            <Link to={"/about"}>About</Link>
+                            <Link to={"/about"} onClick={closeOffcanvas}>About</Link>
 
                         </li>
                         <li className="nav-item">
-                            <Link to={"/Properties"}>Properties</Link>
+                            <Link to={"/Properties"} onClick={closeOffcanvas}>Properties</Link>
 
                         </li>
                         <li className="nav-item">
-                            <Link to={"/blogs"}>Blogs</Link>
+                            <Link to={"/blogs"} onClick={closeOffcanvas}>Blogs</Link>
 
                         </li>
                         <li className="nav-item">
-                            <Link to={"/contact"}> Contact</Link>
+                            <Link to={"/contact"} onClick={closeOffcanvas}> Contact</Link>
                         </li>
 
                     </ul>
@@ -132,7 +141,7 @@ function Header() {
             </div>
 
 
-          
+
         </div>
     )
 }
