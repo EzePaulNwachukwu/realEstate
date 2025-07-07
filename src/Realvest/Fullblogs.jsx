@@ -68,14 +68,34 @@ function Fullblogs() {
                                 ))
                             }
                         </div>
-                        
 
 
-                    </div>) : (<div class="d-flex justify-content-center">
-                        <div class="spinner-border" role="status">
-                            <span class="visually-hidden">Loading...</span>
-                        </div>
-                    </div>)
+
+                    </div>) : (
+
+                        <div className="d-flex justify-content-center align-items-center vh-100 bg-dark text-center">
+              {/* Spinner Animation */}
+              <div className="d-flex justify-content-center gap-4 mb-4">
+                <div
+                  className="spinner-border"
+                  style={{ width: "4rem", height: "4rem", color: "#E65C2F" }}
+                  role="status"
+                >
+                  <span className="visually-hidden">Loading...</span>
+                </div>
+                <div
+                  className="spinner-grow"
+                  style={{ width: "4rem", height: "4rem", color: "#E65C2F" }}
+                  role="status"
+                >
+                  <span className="visually-hidden">Loading...</span>
+                </div>
+              </div>
+
+              {/* Optional Loading Text */}
+              <h5 className="text-white">Please wait... </h5>
+            </div>
+                    )
             }
 
 

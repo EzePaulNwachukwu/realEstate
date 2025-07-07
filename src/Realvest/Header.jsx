@@ -70,7 +70,7 @@ function Header() {
 
                         <ul className="dropdown-menu w-25">
                             <li><Link className='dropdown-item'><img src="https://script.viserlab.com/realvest/assets/images/language/65f7c142e9bbc1710735682.png" alt="" />  Bangla</Link> </li>
-                            <li><Link className="dropdown-item"><img src="https://script.viserlab.com/realvest/assets/images/language/65f7c1ded01571710735838.png" alt="" />  splanish</Link></li>
+                            <li><Link className="dropdown-item"><img src="https://script.viserlab.com/realvest/assets/images/language/65f7c1ded01571710735838.png" alt="" />  spanish</Link></li>
                             <li><Link className="dropdown-item"> <img src="https://script.viserlab.com/realvest/assets/images/language/66544cb2c45ab1716800690.png" alt="" />  Hindi</Link></li>
                         </ul>
                     </div>
@@ -107,7 +107,7 @@ function Header() {
 
                             <ul className="dropdown-menu w-25">
                                 <li><Link className='dropdown-item'><img src="https://script.viserlab.com/realvest/assets/images/language/65f7c142e9bbc1710735682.png" alt="" />  Bangla</Link> </li>
-                                <li><Link className="dropdown-item"><img src="https://script.viserlab.com/realvest/assets/images/language/65f7c1ded01571710735838.png" alt="" />  splanish</Link></li>
+                                <li><Link className="dropdown-item"><img src="https://script.viserlab.com/realvest/assets/images/language/65f7c1ded01571710735838.png" alt="" />  spanish</Link></li>
                                 <li><Link className="dropdown-item"> <img src="https://script.viserlab.com/realvest/assets/images/language/66544cb2c45ab1716800690.png" alt="" />  Hindi</Link></li>
                             </ul>
                         </div>

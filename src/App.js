@@ -13,6 +13,7 @@ import Fullblogs from './Realvest/Fullblogs';
 import Privacypolicy from './Realvest/Privacypolicy';
 import Terms from './Realvest/Terms';
 import ScrollToTopButton from './Realvest/Scroolbtn';
+import Paymentgateway from './Realvest/Paymentgateway';
 
 
 
@@ -36,6 +37,7 @@ function App() {
 <Route path='/terms' element= {<Terms/>}/>
 <Route path='/details/:id' element={<Details/>}/>
 <Route path='/blogpost/:id' element={<Fullblogs/>}/>
+<Route path='/payment' element={<Paymentgateway/>}></Route>
 <Route path='*' element={<Notfoundpage/>}/>
 </Routes>
     </>

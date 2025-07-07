@@ -6,6 +6,7 @@ import { faAngleLeft, faAngleRight, faLocationDot } from '@fortawesome/free-soli
 import { Link } from 'react-router-dom';
 import Investorscard from './Investorscard';
 import Notfoundpage from './Notfoundpage';
+import Paymentgateway from './Paymentgateway';
 
 function Details() {
     function getRandomItems(array, count = 6) {
@@ -37,7 +38,7 @@ function Details() {
     if (!product) return <h1><Notfoundpage /></h1>;
 
     return (
-        <div style={{ backgroundColor: "#F5F5F5" , paddingTop:"80px"}}>
+        <div style={{ backgroundColor: "#F5F5F5", paddingTop: "80px" }}>
             <Sectionbanna section={"Property Details"} />
 
             {
@@ -83,11 +84,11 @@ function Details() {
 
                                     </div>
 
-                                    <button style={{width:"45px", height:"45px", margin:"auto",marginLeft:"20px", textAlign:"center", backgroundColor:"#ff6600",borderRadius:"50%"}} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <button style={{ width: "45px", height: "45px", margin: "auto", marginLeft: "20px", textAlign: "center", backgroundColor: "#ff6600", borderRadius: "50%" }} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                                         <span aria-hidden="true" style={{ fontSize: "30px" }}><FontAwesomeIcon icon={faAngleLeft} /></span>
                                         <span className="visually-hidden">Previous</span>
                                     </button>
-                                    <button style={{width:"45px", height:"45px", margin:"auto",marginRight:"20px", textAlign:"center", backgroundColor:"#ff6600",borderRadius:"50%"}} className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <button style={{ width: "45px", height: "45px", margin: "auto", marginRight: "20px", textAlign: "center", backgroundColor: "#ff6600", borderRadius: "50%" }} className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                                         <span aria-hidden="true" style={{ fontSize: "30px" }}> <FontAwesomeIcon icon={faAngleRight} /></span>
                                         <span className="visually-hidden">Next</span>
                                     </button>
@@ -127,12 +128,26 @@ function Details() {
 
                         <div className='left col-lg-4 col-md-12 col-sm-10 ml-2'>
                             <div>
-                                <h3>{product.price}</h3>
+                                <h3>{"₦" + product.price.toLocaleString()}</h3>
                                 <p>Per share amount</p>
                             </div>
                             <div className='row'>
-                                <button className='col-lg-12 col-sm-4 col-md-5  ' style={{ backgroundColor: "#ff6600", padding: "10px", borderRadius: "10px", border: "none",}}>  <Link style={{ color: "white", textDecoration: "none", fontSize: "18px" }}>Invest Now</Link> </button>
-                                <button className="btn filter d-sm-flex d-lg-none d-md-flex col-sm-4 col-md-4 my-3" style={{width:"40%", padding: "10px", borderRadius: "10px", fontSize:"20px",textAlign:"center" ,marginLeft:"10px"}} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">More Details</button>
+                                 <button className='col-lg-12 col-sm-4 col-md-5  '  style={{ backgroundColor: "#ff6600", padding: "10px", borderRadius: "10px", border: "none", color:"white",fontSize: "20px" }} type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal"> Invest Now </button>
+                                {/* <button   <Link style={{ color: "white", textDecoration: "none", fontSize: "18px" }}>Invest Now</Link> </button> */}
+                                <button className="btn filter d-sm-flex d-lg-none d-md-flex col-sm-4 col-md-4 my-3" style={{ width: "40%", padding: "10px", borderRadius: "10px",  textAlign: "center", marginLeft: "10px" }} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">More Details</button>
+                            </div>
+
+
+                           
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered ">
+
+                                    <div class="modal-content ">
+                                     <Paymentgateway amount={product.price}/>  
+                                
+                                    </div>
+                                </div>
                             </div>
 
 
@@ -270,7 +285,7 @@ function Details() {
                                                             <span>{late.location}</span>
                                                         </div>
                                                         <span className="price">
-                                                            {late.price}
+                                                            { "₦" + late.price.toLocaleString()}
                                                         </span>
                                                     </div>
 
@@ -412,7 +427,7 @@ function Details() {
                                                         <span>{late.location}</span>
                                                     </div>
                                                     <span className="price">
-                                                        {late.price}
+                                                        {"₦" + late.price.toLocaleString()}
                                                     </span>
                                                 </div>
 
@@ -432,11 +447,28 @@ function Details() {
 
                         </div>
 
-                    </div>) : (<><div className="d-flex justify-content-center">
-                        <div className="spinner-border" role="status">
-                            <span className="visually-hidden">Loading...</span>
+                    </div>) : (<div className="d-flex justify-content-center align-items-center vh-100 bg-dark text-center">
+                        {/* Spinner Animation */}
+                        <div className="d-flex justify-content-center gap-4 mb-4">
+                            <div
+                                className="spinner-border"
+                                style={{ width: "4rem", height: "4rem", color: "#E65C2F" }}
+                                role="status"
+                            >
+                                <span className="visually-hidden">Loading...</span>
+                            </div>
+                            <div
+                                className="spinner-grow"
+                                style={{ width: "4rem", height: "4rem", color: "#E65C2F" }}
+                                role="status"
+                            >
+                                <span className="visually-hidden">Loading...</span>
+                            </div>
                         </div>
-                    </div></>)
+
+                        {/* Optional Loading Text */}
+                        <h5 className="text-white">Please wait... </h5>
+                    </div>)
             }
 
         </div>
